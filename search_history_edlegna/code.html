@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"tertiary-fixed-dim":"#e9c349","primary-container":"#1f3a30","secondary":"#006b5f","inverse-primary":"#afcdbf","surface-variant":"#d9e3f6","surface-container":"#e6eeff","background":"#f8f9ff","on-secondary-fixed-variant":"#005048","secondary-fixed-dim":"#4fdbc8","surface":"#f8f9ff","secondary-fixed":"#71f8e4","on-primary":"#ffffff","on-secondary":"#ffffff","surface-container-high":"#dee9fc","on-surface-variant":"#424845","on-primary-fixed":"#042017","primary-fixed-dim":"#afcdbf","error":"#ba1a1a","outline":"#727975","on-tertiary-fixed":"#241a00","surface-bright":"#f8f9ff","secondary-container":"#6df5e1","on-primary-container":"#87a497","outline-variant":"#c1c8c3","surface-container-highest":"#d9e3f6","on-primary-fixed-variant":"#314c42","surface-tint":"#486459","error-container":"#ffdad6","surface-container-lowest":"#ffffff","tertiary-fixed":"#ffe088","inverse-surface":"#27313f","on-background":"#121c2a","on-error":"#ffffff","surface-dim":"#d0dbed","on-tertiary-container":"#4e3d00","primary":"#08241b","on-error-container":"#93000a","tertiary":"#735c00","primary-fixed":"#cbeadb","on-surface":"#121c2a","surface-container-low":"#eff4ff","on-tertiary-fixed-variant":"#574500","tertiary-container":"#cba72f","on-secondary-container":"#006f64","on-tertiary":"#ffffff","inverse-on-surface":"#eaf1ff","on-secondary-fixed":"#00201c"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xl":"2.5rem","space-lg":"1.5rem","gutter":"1.5rem","margin":"1rem","space-sm":"0.5rem","gutter-desktop":"2rem","margin-desktop":"3.5rem","margin-tablet":"2rem","space-xs":"0.25rem","space-md":"1rem"},"fontFamily":{"headline-xl-mobile":["EB Garamond"],"label-md":["DM Sans"],"label-lg":["DM Sans"],"headline-md":["EB Garamond"],"body-md":["DM Sans"],"display-lg-mobile":["EB Garamond"],"display-lg":["EB Garamond"],"headline-sm":["EB Garamond"],"headline-xl":["EB Garamond"],"headline-lg":["EB Garamond"],"body-lg":["DM Sans"],"label-sm":["DM Sans"],"body-sm":["DM Sans"]},"fontSize":{"headline-xl-mobile":["2rem",{"lineHeight":"2.5rem","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.03em","fontWeight":"500"}],"label-lg":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0.02em","fontWeight":"500"}],"headline-md":["1.5rem",{"lineHeight":"2rem","fontWeight":"600"}],"body-md":["1rem",{"lineHeight":"1.5rem","fontWeight":"400"}],"display-lg-mobile":["2.5rem",{"lineHeight":"3rem","letterSpacing":"-0.015em","fontWeight":"600"}],"display-lg":["3.5rem",{"lineHeight":"4rem","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-sm":["1.25rem",{"lineHeight":"1.75rem","fontWeight":"600"}],"headline-xl":["2.5rem",{"lineHeight":"3rem","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-lg":["2rem",{"lineHeight":"2.5rem","fontWeight":"500"}],"body-lg":["1.125rem",{"lineHeight":"1.75rem","fontWeight":"400"}],"label-sm":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.05em","fontWeight":"700"}],"body-sm":["0.875rem",{"lineHeight":"1.25rem","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(31,58,48,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="h-20 px-space-lg flex items-center gap-space-sm"><img alt="Edlegna Official Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrBU_YJRUkq_IOaMvZWggJrddQlUyW__D7oZkYGwhOcOiDf2a5upcDEOJgzBoVTBOq15IrQInlfQ0LXsYOQQgpZ_93xZAQfyfQ9sbAd6_ms74gYYLXhkhMR8Ix4naHm8W1q5HHD2H8HCQHolG8rxNiT5Q0M1mB_G9p0_NWeRWHC7vfEhdk8OJsHoSJb5iuWSA3Wdv3YSonc-qBy1RPpbu-fwUHxiOeCXtySiaz6GCFQw"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight">Edlegna</span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Scholar Portal</span></div></div><div class="px-space-md py-space-sm"><span class="px-space-md font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Discovery Suite</span></div><nav class="flex flex-col gap-space-xs px-space-md" data-active-classes="bg-primary-container text-on-primary font-bold"><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="dashboard" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-xl">space_dashboard</span><span>Dashboard</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="discover-scholarships" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-xl">travel_explore</span><span>Discover Scholarships</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="ai-recommendations" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-xl text-secondary">auto_awesome</span><span>AI Recommendations</span></div><span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-space-xs py-0.5 rounded-full font-bold">12</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="eligibility-checker" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-xl">rule_folder</span><span>Eligibility Checker</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="saved-scholarships" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-xl">bookmark</span><span>Saved Scholarships</span></div><span class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-space-xs py-0.5 rounded-full">8</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="search-history" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-xl">history_edu</span><span>Search History</span></div></a></nav><div class="px-space-md pt-space-lg pb-space-sm"><span class="px-space-md font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Personal Dossier</span></div><nav class="flex flex-col gap-space-xs px-space-md" data-active-classes="bg-primary-container text-on-primary font-bold"><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="my-profile" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-xl">account_circle</span><span>My Profile</span></div><span class="text-tertiary font-label-sm text-label-sm font-bold">94%</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="notifications" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-xl">notifications</span><span>Notifications</span></div><span class="bg-error text-on-error font-label-sm text-label-sm px-space-xs py-0.5 rounded-full font-bold">3</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="settings" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-xl">settings</span><span>Settings</span></div></a></nav></div><div class="p-space-md bg-surface-container-low/60 m-space-md rounded-lg flex items-center gap-space-md"><img alt="Profile" class="w-10 h-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpdcdYuqyrb_ZMzNePg0SIMiVbRJLFZf9IsINb3g755YkRU991jpUVB3jWhUt9_WG-TQ-RLzJGAUI5oNEiTja_75fT1MSXaE2doRSeEJhixb_-9o5dbJ0mqaZRKWrD2lieG0JfIbWLkd0dajglKt8ALMppVyJngOq1Nz5-AEf6bIPVnwU1WIY7uCeMgthnv16Pug-YvoQF4Z54xqKkOOOwNAA_ACZRsAO2IsXST3g"/><div class="flex flex-col min-w-0 flex-1"><span class="font-label-lg text-label-lg font-bold text-on-surface truncate">Julian Vance</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Stanford Fellow '26</span></div><a class="text-on-surface-variant hover:text-error transition-colors" data-path="sign-in" href="#" title="Sign Out"><span class="material-symbols-outlined text-lg">logout</span></a></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(31,58,48,0.04)] z-40 flex items-center justify-between px-space-lg lg:px-margin-desktop"><div class="flex items-center gap-space-md"><img alt="Edlegna Official Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrBU_YJRUkq_IOaMvZWggJrddQlUyW__D7oZkYGwhOcOiDf2a5upcDEOJgzBoVTBOq15IrQInlfQ0LXsYOQQgpZ_93xZAQfyfQ9sbAd6_ms74gYYLXhkhMR8Ix4naHm8W1q5HHD2H8HCQHolG8rxNiT5Q0M1mB_G9p0_NWeRWHC7vfEhdk8OJsHoSJb5iuWSA3Wdv3YSonc-qBy1RPpbu-fwUHxiOeCXtySiaz6GCFQw"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-semibold hidden md:inline-block">Edlegna Academic Portfolio</span></div><div class="flex items-center gap-space-lg"><div class="relative hidden sm:block w-72"><span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-on-surface-variant text-lg">search</span><input class="w-full pl-10 pr-space-md py-space-xs bg-surface-container-lowest text-on-surface font-body-sm text-body-sm rounded-lg outline-none ring-1 ring-outline-variant focus:ring-primary" placeholder="Search grants, donors, fields..." type="text"/></div><a class="relative p-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-2xl">notifications</span><span class="absolute top-1 right-1 w-2.5 h-2.5 bg-error rounded-full"></span></a><div class="flex items-center gap-space-sm pl-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpdcdYuqyrb_ZMzNePg0SIMiVbRJLFZf9IsINb3g755YkRU991jpUVB3jWhUt9_WG-TQ-RLzJGAUI5oNEiTja_75fT1MSXaE2doRSeEJhixb_-9o5dbJ0mqaZRKWrD2lieG0JfIbWLkd0dajglKt8ALMppVyJngOq1Nz5-AEf6bIPVnwU1WIY7uCeMgthnv16Pug-YvoQF4Z54xqKkOOOwNAA_ACZRsAO2IsXST3g"/><span class="font-label-md text-label-md font-bold text-on-surface hidden lg:inline">J. Vance</span></div></div></header><main class="relative pt-20 bg-surface min-h-screen px-space-md lg:px-space-xl py-space-lg"><div class="flex flex-col w-full">
+<!-- Archival Context Banner & Title Matrix -->
+<section class="relative mb-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md">
+<div class="flex flex-col max-w-3xl">
+<div class="flex items-center gap-space-xs text-secondary mb-space-xs">
+<span class="material-symbols-outlined text-base">manage_search</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest font-bold">Inquiry Audit Trail</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Session Ledger #8042-EV</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary tracking-tight font-semibold">
+          Search History &amp; Discovery Queries
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs leading-relaxed">
+          Review your previous AI semantic inquiries, retrieve generated grant shortlists, or replay queries with updated profile parameters.
+        </p>
+</div>
+<!-- Live Sync / Actions -->
+<div class="flex items-center gap-space-sm self-start lg:self-auto">
+<div class="hidden sm:flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-secondary-container/30 text-on-secondary-container font-label-md text-label-md">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span>Vector Index Synced</span>
+</div>
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-error transition-all font-label-lg text-label-lg shadow-sm" id="clear-all-btn">
+<span class="material-symbols-outlined text-base">delete_sweep</span>
+<span>Clear All History</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Metric Architecture Ribbon -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-space-md mb-space-lg">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-bold">Total Queries Run</span>
+<div class="flex items-baseline gap-space-xs mt-space-xs">
+<span class="font-headline-lg text-headline-lg text-primary font-bold">24</span>
+<span class="font-label-md text-label-md text-secondary font-semibold">+6 this week</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant mt-0.5">Semantic &amp; criteria filtered</span>
+</div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-low flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-2xl">database</span>
+</div>
+</div>
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-bold">Latest Discovery</span>
+<div class="flex items-baseline gap-space-xs mt-space-xs">
+<span class="font-headline-lg text-headline-lg text-primary font-bold">8m ago</span>
+<span class="font-label-md text-label-md text-secondary font-semibold">14 hits</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant mt-0.5">European Stipend Focus</span>
+</div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-2xl">schedule</span>
+</div>
+</div>
+<div class="relative overflow-hidden rounded-xl bg-primary-container text-on-primary p-space-md shadow-sm flex items-center justify-between">
+<div class="flex flex-col min-w-0 pr-space-sm">
+<span class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider font-bold">Top Search Topic</span>
+<div class="mt-space-xs">
+<p class="font-headline-sm text-headline-sm text-on-primary font-medium truncate">
+            Master's in ML &amp; Governance
+          </p>
+</div>
+<span class="font-label-md text-label-md text-on-primary-container mt-0.5">Account affinity: 78% weight</span>
+</div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-lowest/10 flex items-center justify-center text-secondary-fixed shrink-0">
+<span class="material-symbols-outlined text-2xl">psychology</span>
+</div>
+</div>
+</section>
+<!-- Query Ledger Control Strip -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm mb-space-lg flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-on-surface-variant text-xl">travel_explore</span>
+<input class="w-full pl-11 pr-space-md py-space-sm rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm outline-none placeholder:text-on-surface-variant/70 focus:bg-surface-container-lowest shadow-inner transition-all" id="query-search-input" placeholder="Filter query history by keyword, field, or target nation..." type="text"/>
+</div>
+<div class="flex items-center gap-space-sm overflow-x-auto pb-1 md:pb-0">
+<button class="filter-pill px-space-md py-space-xs rounded-full bg-primary-container text-on-primary font-label-md text-label-md font-bold whitespace-nowrap">
+        All Logs (24)
+      </button>
+<button class="filter-pill px-space-md py-space-xs rounded-full bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md whitespace-nowrap transition-colors">
+        Vector Inquiries (16)
+      </button>
+<button class="filter-pill px-space-md py-space-xs rounded-full bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md whitespace-nowrap transition-colors">
+        With Alert Active (3)
+      </button>
+<div class="h-6 w-px bg-surface-container-high mx-space-xs"></div>
+<button class="flex items-center gap-1 text-on-surface-variant hover:text-primary font-label-md text-label-md whitespace-nowrap px-space-xs">
+<span class="material-symbols-outlined text-base">swap_vert</span>
+<span>Newest First</span>
+</button>
+</div>
+</section>
+<!-- History Record Collection -->
+<section class="flex flex-col gap-space-md mb-space-xl" id="query-log-container">
+<!-- Record 1 (High Match Vector) -->
+<article class="query-card bg-surface-container-lowest rounded-xl p-space-md lg:p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col gap-space-md" data-keywords="machine learning ai europe fully funded stipend master's daad">
+<div class="flex flex-col lg:flex-row lg:items-start justify-between gap-space-sm">
+<div class="flex flex-col gap-space-xs flex-1">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-sm">auto_awesome</span>
+              AI Semantic Vector Search
+            </span>
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm font-medium">
+<span class="material-symbols-outlined text-sm">schedule</span>
+              8 minutes ago
+            </span>
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-tertiary-container/30 text-on-tertiary-container font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-sm">verified</span>
+              14 Programs Identified
+            </span>
+</div>
+<div class="mt-space-xs">
+<h2 class="font-headline-md text-headline-md text-primary font-semibold tracking-tight">
+              “Fully funded master's scholarships in AI/Machine Learning with living stipend in Europe”
+            </h2>
+</div>
+</div>
+<div class="flex items-center gap-space-xs self-start lg:self-center shrink-0">
+<button class="flex items-center gap-1 px-space-md py-space-xs rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-semibold hover:bg-primary transition-all shadow-sm">
+<span class="material-symbols-outlined text-base">replay</span>
+<span>Replay Search</span>
+</button>
+<button class="flex items-center gap-1 px-space-md py-space-xs rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-medium transition-all">
+<span>View 14 Results</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</button>
+<button class="p-space-xs rounded-lg text-on-surface-variant hover:text-error hover:bg-error-container/40 transition-all" title="Delete Query Log">
+<span class="material-symbols-outlined text-lg">delete</span>
+</button>
+</div>
+</div>
+<!-- Parameter Breakdown Strip -->
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-bold">Applied Constraints:</span>
+<span class="px-space-sm py-0.5 rounded bg-surface-container-low text-on-surface font-label-md text-label-md">Europe (All Scopes)</span>
+<span class="px-space-sm py-0.5 rounded bg-surface-container-low text-on-surface font-label-md text-label-md">Master's Level</span>
+<span class="px-space-sm py-0.5 rounded bg-surface-container-low text-on-surface font-label-md text-label-md">100% Tuition + Living Stipend</span>
+<span class="px-space-sm py-0.5 rounded bg-surface-container-low text-on-surface font-label-md text-label-md">Deadline: 2026/27 Intake</span>
+</div>
+<!-- Top Match Preview Carousel Drawer -->
+<div class="rounded-lg bg-surface-container-low/70 p-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-xs text-on-surface-variant shrink-0">
+<span class="material-symbols-outlined text-base text-secondary">insights</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-bold">Top Semantic Outputs:</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md flex-1">
+<!-- Award Snippet 1 -->
+<div class="flex items-center gap-space-sm bg-surface-container-lowest p-space-sm rounded-lg shadow-sm">
+<div class="w-10 h-10 rounded bg-primary-container/10 text-primary font-headline-sm text-headline-sm flex items-center justify-center font-bold">
+              D
+            </div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-label-lg text-label-lg font-bold text-on-surface truncate">DAAD Helmut-Schmidt Fellowship</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Germany • Full Coverage</span>
+</div>
+<div class="flex flex-col items-end shrink-0 pl-space-xs">
+<span class="font-label-md text-label-md font-bold text-secondary">96%</span>
+<span class="font-label-sm text-label-sm text-outline">Vector</span>
+</div>
+</div>
+<!-- Award Snippet 2 -->
+<div class="flex items-center gap-space-sm bg-surface-container-lowest p-space-sm rounded-lg shadow-sm">
+<div class="w-10 h-10 rounded bg-secondary/10 text-secondary font-headline-sm text-headline-sm flex items-center justify-center font-bold">
+              E
+            </div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-label-lg text-label-lg font-bold text-on-surface truncate">Erasmus Mundus AI4Health</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pan-EU Consortia • €1,400/mo</span>
+</div>
+<div class="flex flex-col items-end shrink-0 pl-space-xs">
+<span class="font-label-md text-label-md font-bold text-secondary">92%</span>
+<span class="font-label-sm text-label-sm text-outline">Vector</span>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- Record 2 (Fellowship & Diversity Focus) -->
+<article class="query-card bg-surface-container-lowest rounded-xl p-space-md lg:p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col gap-space-md" data-keywords="african women stem cambridge mastercard fellowships leadership">
+<div class="flex flex-col lg:flex-row lg:items-start justify-between gap-space-sm">
+<div class="flex flex-col gap-space-xs flex-1">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-sm">psychology</span>
+              AI Semantic Match
+            </span>
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm font-medium">
+<span class="material-symbols-outlined text-sm">schedule</span>
+              Yesterday at 4:15 PM
+            </span>
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-tertiary-container/30 text-on-tertiary-container font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-sm">verified</span>
+              8 Verified Programs
+            </span>
+</div>
+<div class="mt-space-xs">
+<h2 class="font-headline-md text-headline-md text-primary font-semibold tracking-tight">
+              “Graduate fellowships for African women in STEM with leadership focus”
+            </h2>
+</div>
+</div>
+<div class="flex items-center gap-space-xs self-start lg:self-center shrink-0">
+<button class="flex items-center gap-1 px-space-md py-space-xs rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-semibold hover:bg-primary transition-all shadow-sm">
+<span class="material-symbols-outlined text-base">replay</span>
+<span>Replay Search</span>
+</button>
+<button class="flex items-center gap-1 px-space-md py-space-xs rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-medium transition-all">
+<span>View 8 Results</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</button>
+<button class="p-space-xs rounded-lg text-on-surface-variant hover:text-error hover:bg-error-container/40 transition-all" title="Delete Query Log">
+<span class="material-symbols-outlined text-lg">delete</span>
+</button>
+</div>
+</div>
+<!-- Parameter Breakdown Strip -->
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-bold">Applied Constraints:</span>
+<span class="px-space-sm py-0.5 rounded bg-surface-container-low text-on-surface font-label-md text-label-md">STEM Fields Only</span>
+<span class="px-space-sm py-0.5 rounded bg-surface-container-low text-on-surface font-label-md text-label-md">Postgraduate Fellowship</span>
+<span class="px-space-sm py-0.5 rounded bg-surface-container-low text-on-surface font-label-md text-label-md">Target: Sub-Saharan Africa</span>
+<span class="px-space-sm py-0.5 rounded bg-surface-container-low text-on-surface font-label-md text-label-md">Mentorship Track: Required</span>
+</div>
+<!-- Top Match Preview Carousel Drawer -->
+<div class="rounded-lg bg-surface-container-low/70 p-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-xs text-on-surface-variant shrink-0">
+<span class="material-symbols-outlined text-base text-secondary">insights</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-bold">Top Semantic Outputs:</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md flex-1">
+<!-- Award Snippet 1 -->
+<div class="flex items-center gap-space-sm bg-surface-container-lowest p-space-sm rounded-lg shadow-sm">
+<div class="w-10 h-10 rounded bg-tertiary/10 text-tertiary font-headline-sm text-headline-sm flex items-center justify-center font-bold">
+              M
+            </div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-label-lg text-label-lg font-bold text-on-surface truncate">Mastercard Foundation Cambridge</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">UK • Full Cost + Research Budget</span>
+</div>
+<div class="flex flex-col items-end shrink-0 pl-space-xs">
+<span class="font-label-md text-label-md font-bold text-secondary">98%</span>
+<span class="font-label-sm text-label-sm text-outline">Vector</span>
+</div>
+</div>
+<!-- Award Snippet 2 -->
+<div class="flex items-center gap-space-sm bg-surface-container-lowest p-space-sm rounded-lg shadow-sm">
+<div class="w-10 h-10 rounded bg-primary-container/10 text-primary font-headline-sm text-headline-sm flex items-center justify-center font-bold">
+              S
+            </div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-label-lg text-label-lg font-bold text-on-surface truncate">Schlumberger Faculty for Future</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Global PhD / Postdoc • Up to $50k</span>
+</div>
+<div class="flex flex-col items-end shrink-0 pl-space-xs">
+<span class="font-label-md text-label-md font-bold text-secondary">91%</span>
+<span class="font-label-sm text-label-sm text-outline">Vector</span>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- Record 3 (Strict Filter Search) -->
+<article class="query-card bg-surface-container-lowest rounded-xl p-space-md lg:p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col gap-space-md" data-keywords="public health informatics uk fee wellcome chevening united kingdom">
+<div class="flex flex-col lg:flex-row lg:items-start justify-between gap-space-sm">
+<div class="flex flex-col gap-space-xs flex-1">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-sm">filter_alt</span>
+              Keyword &amp; Eligibility Filtered
+            </span>
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm font-medium">
+<span class="material-symbols-outlined text-sm">schedule</span>
+              3 days ago
+            </span>
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold">
+              6 Programs Identified
+            </span>
+</div>
+<div class="mt-space-xs">
+<h2 class="font-headline-md text-headline-md text-primary font-semibold tracking-tight">
+              “Public health informatics scholarships in UK with no application fee”
+            </h2>
+</div>
+</div>
+<div class="flex items-center gap-space-xs self-start lg:self-center shrink-0">
+<button class="flex items-center gap-1 px-space-md py-space-xs rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-semibold hover:bg-primary transition-all shadow-sm">
+<span class="material-symbols-outlined text-base">replay</span>
+<span>Replay Search</span>
+</button>
+<button class="flex items-center gap-1 px-space-md py-space-xs rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-medium transition-all">
+<span>View 6 Results</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</button>
+<button class="p-space-xs rounded-lg text-on-surface-variant hover:text-error hover:bg-error-container/40 transition-all" title="Delete Query Log">
+<span class="material-symbols-outlined text-lg">delete</span>
+</button>
+</div>
+</div>
+<!-- Parameter Breakdown Strip -->
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-bold">Applied Constraints:</span>
+<span class="px-space-sm py-0.5 rounded bg-surface-container-low text-on-surface font-label-md text-label-md">Region: United Kingdom</span>
+<span class="px-space-sm py-0.5 rounded bg-surface-container-low text-on-surface font-label-md text-label-md">Fee Waiver: Verified $0</span>
+<span class="px-space-sm py-0.5 rounded bg-surface-container-low text-on-surface font-label-md text-label-md">Discipline: Health Data Science</span>
+</div>
+<!-- Top Match Preview Carousel Drawer -->
+<div class="rounded-lg bg-surface-container-low/70 p-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-xs text-on-surface-variant shrink-0">
+<span class="material-symbols-outlined text-base text-secondary">insights</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-bold">Top Semantic Outputs:</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md flex-1">
+<!-- Award Snippet 1 -->
+<div class="flex items-center gap-space-sm bg-surface-container-lowest p-space-sm rounded-lg shadow-sm">
+<div class="w-10 h-10 rounded bg-secondary/10 text-secondary font-headline-sm text-headline-sm flex items-center justify-center font-bold">
+              W
+            </div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-label-lg text-label-lg font-bold text-on-surface truncate">Wellcome Trust Doctoral Studentship</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">UK-Wide • £23,900/yr Tax Free</span>
+</div>
+<div class="flex flex-col items-end shrink-0 pl-space-xs">
+<span class="font-label-md text-label-md font-bold text-secondary">91%</span>
+<span class="font-label-sm text-label-sm text-outline">Match</span>
+</div>
+</div>
+<!-- Award Snippet 2 -->
+<div class="flex items-center gap-space-sm bg-surface-container-lowest p-space-sm rounded-lg shadow-sm">
+<div class="w-10 h-10 rounded bg-primary-container/10 text-primary font-headline-sm text-headline-sm flex items-center justify-center font-bold">
+              C
+            </div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-label-lg text-label-lg font-bold text-on-surface truncate">Chevening Master's Fellowship</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">FCDO London • Comprehensive Award</span>
+</div>
+<div class="flex flex-col items-end shrink-0 pl-space-xs">
+<span class="font-label-md text-label-md font-bold text-secondary">88%</span>
+<span class="font-label-sm text-label-sm text-outline">Match</span>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- Record 4 (Catalog Query) -->
+<article class="query-card bg-surface-container-lowest rounded-xl p-space-md lg:p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col gap-space-md" data-keywords="daad germany epos postgraduate development courses 2026 2027">
+<div class="flex flex-col lg:flex-row lg:items-start justify-between gap-space-sm">
+<div class="flex flex-col gap-space-xs flex-1">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-sm">manage_search</span>
+              Catalog &amp; Institutional Search
+            </span>
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm font-medium">
+<span class="material-symbols-outlined text-sm">calendar_today</span>
+              Oct 02, 2025
+            </span>
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-tertiary-container/30 text-on-tertiary-container font-label-sm text-label-sm font-bold">
+              19 Programs Identified
+            </span>
+</div>
+<div class="mt-space-xs">
+<h2 class="font-headline-md text-headline-md text-primary font-semibold tracking-tight">
+              “DAAD Germany development-related postgraduate courses EPOS 2026/2027”
+            </h2>
+</div>
+</div>
+<div class="flex items-center gap-space-xs self-start lg:self-center shrink-0">
+<button class="flex items-center gap-1 px-space-md py-space-xs rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-semibold hover:bg-primary transition-all shadow-sm">
+<span class="material-symbols-outlined text-base">replay</span>
+<span>Replay Search</span>
+</button>
+<button class="flex items-center gap-1 px-space-md py-space-xs rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-medium transition-all">
+<span>View 19 Results</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</button>
+<button class="p-space-xs rounded-lg text-on-surface-variant hover:text-error hover:bg-error-container/40 transition-all" title="Delete Query Log">
+<span class="material-symbols-outlined text-lg">delete</span>
+</button>
+</div>
+</div>
+<!-- Parameter Breakdown Strip -->
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-bold">Applied Constraints:</span>
+<span class="px-space-sm py-0.5 rounded bg-surface-container-low text-on-surface font-label-md text-label-md">Federal Ministry BMZ Scheme</span>
+<span class="px-space-sm py-0.5 rounded bg-surface-container-low text-on-surface font-label-md text-label-md">Language: English / German B2</span>
+<span class="px-space-sm py-0.5 rounded bg-surface-container-low text-on-surface font-label-md text-label-md">2+ Years Professional Experience</span>
+</div>
+</article>
+</section>
+<!-- Query Visualizer & Semantic Weight Bento Section -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-xl">
+<!-- Visual Representation of Vector Weights -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-space-xs text-secondary mb-space-xs">
+<span class="material-symbols-outlined text-lg">hub</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-bold">Natural Language Embedding</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold mb-space-xs">
+          Academic Profile Clustering
+        </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+          How our LLM neural parser translates your search history into deterministic grant match parameters.
+        </p>
+</div>
+<!-- Inline Dynamic Vector Diagram -->
+<div class="p-space-md rounded-lg bg-surface-container-low/60 flex flex-col gap-space-sm">
+<div class="flex items-center justify-between text-xs">
+<span class="font-label-md text-label-md text-on-surface font-medium">Machine Learning &amp; AI</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">42% weight</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 42%;"></div>
+</div>
+<div class="flex items-center justify-between text-xs mt-space-xs">
+<span class="font-label-md text-label-md text-on-surface font-medium">Full Tuition &amp; Stipend Stipulation</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">34% weight</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-tertiary-container h-full rounded-full" style="width: 34%;"></div>
+</div>
+<div class="flex items-center justify-between text-xs mt-space-xs">
+<span class="font-label-md text-label-md text-on-surface font-medium">Geographic Affiliation (EU / UK)</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">24% weight</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 24%;"></div>
+</div>
+</div>
+<div class="pt-space-md mt-space-sm flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Embeddings: OpenSemantic v4.2</span>
+<button class="text-secondary hover:underline font-bold">Refine Weights</button>
+</div>
+</div>
+<!-- Editorial Archival Image & Context -->
+<div class="lg:col-span-7 relative overflow-hidden rounded-xl min-h-[260px] bg-primary-container flex flex-col justify-end p-space-lg text-on-primary shadow-sm">
+<div class="absolute inset-0 bg-cover bg-center mix-blend-overlay opacity-30" data-alt="Classical university library interior with dark wood bookshelves, high arched ceilings, students studying at long polished mahogany tables with green glass banker lamps, atmospheric dust motes floating in warm light beams, dark ivy forest aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAPScZHLrHhZO7lxQDVi_DNYFwJkcJi_xgkmRq0zpF5TggbtskKRVtSUQYUSTecDIqeLNDERaXfvUaOMwi2kDOtblnhQTxs23l0Py5C5bFyu9ujLA1QeeTD1TLWnNkd-YQ_KkHdSdBRbXfEiRKbGuajMK_8su0LnQF2zefMTMErBGbtj1IfLvmLMH7BYdFpVQI5CMGjeLeC7GDDdIO-f2NckGMUbJ2G_drFbQ4YTZU')">
+</div>
+<div class="relative z-10 max-w-xl">
+<span class="px-space-sm py-0.5 rounded bg-surface-container-lowest/20 backdrop-blur text-secondary-fixed font-label-sm text-label-sm font-bold uppercase tracking-widest inline-block mb-space-xs">
+          Collegiate Registry System
+        </span>
+<h3 class="font-headline-md text-headline-md text-on-primary font-semibold tracking-tight">
+          Preserving Discovery Provenance
+        </h3>
+<p class="font-body-sm text-body-sm text-on-primary-container mt-space-xs leading-relaxed">
+          Every query record maintains full context of your academic criteria snapshot at execution time, allowing you to trace changes in fellowship availability over recurring admissions cycles.
+        </p>
+</div>
+</div>
+</section>
+<!-- Bottom Module: Saved Search Alerts & Automated Feed -->
+<section class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm mb-space-md relative overflow-hidden">
+<div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-lg">
+<div class="flex items-start gap-space-md max-w-2xl">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/40 text-on-secondary-container flex items-center justify-center shrink-0 mt-1">
+<span class="material-symbols-outlined text-2xl">forward_to_inbox</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs mb-1">
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">Autonomous Weekly Discovery Dispatch</span>
+<span class="px-space-xs py-0.5 rounded bg-secondary text-on-secondary font-label-sm text-label-sm font-bold">PRO</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Dispatch weekly digests of newly indexed funding opportunities matching your highest-confidence search query directly to <strong class="text-on-surface font-semibold">julian.vance@stanford.edu</strong>.
+          </p>
+</div>
+</div>
+<!-- Controls & Toggle -->
+<div class="flex items-center gap-space-md w-full lg:w-auto justify-between lg:justify-end">
+<div class="flex flex-col items-end">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Weekly Alert Active</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Next delivery: Monday, 8:00 AM</span>
+</div>
+<!-- Custom Accessible Switch -->
+<label class="relative inline-flex items-center cursor-pointer select-none" for="alert-toggle">
+<input checked="" class="sr-only peer" id="alert-toggle" type="checkbox"/>
+<div class="w-14 h-8 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[4px] after:bg-white after:border-surface-container-high after:border after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+</div>
+</section>
+<!-- Script for Interactive Filters & Dynamic Feedback -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const searchInput = document.getElementById('query-search-input');
+      const cards = document.querySelectorAll('.query-card');
+      const clearBtn = document.getElementById('clear-all-btn');
+      const alertToggle = document.getElementById('alert-toggle');
+
+      // Live filter interaction
+      if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+          const val = e.target.value.toLowerCase().trim();
+          cards.forEach(card => {
+            const keywords = (card.getAttribute('data-keywords') || '') + ' ' + card.innerText.toLowerCase();
+            if (keywords.includes(val)) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      }
+
+      // Replay & Delete button interactions
+      document.querySelectorAll('.query-card').forEach(card => {
+        const replayBtn = card.querySelector('button:has(.material-symbols-outlined:contains("replay"))') || card.querySelectorAll('button')[0];
+        const deleteBtn = card.querySelector('button[title="Delete Query Log"]');
+
+        if (replayBtn) {
+          replayBtn.addEventListener('click', (ev) => {
+            ev.stopPropagation();
+            const originalText = replayBtn.innerHTML;
+            replayBtn.innerHTML = '<span class="material-symbols-outlined text-base animate-spin">sync</span><span>Replaying...</span>';
+            setTimeout(() => {
+              replayBtn.innerHTML = '<span class="material-symbols-outlined text-base">check</span><span>Executed</span>';
+              setTimeout(() => {
+                replayBtn.innerHTML = originalText;
+              }, 1800);
+            }, 700);
+          });
+        }
+
+        if (deleteBtn) {
+          deleteBtn.addEventListener('click', (ev) => {
+            ev.stopPropagation();
+            card.style.opacity = '0';
+            card.style.transform = 'scale(0.98)';
+            card.style.transition = 'all 0.25s ease';
+            setTimeout(() => {
+              card.remove();
+            }, 250);
+          });
+        }
+      });
+
+      // Clear all history interaction
+      if (clearBtn) {
+        clearBtn.addEventListener('click', () => {
+          if (confirm('Are you sure you wish to purge your entire query audit log? Active alerts will be preserved.')) {
+            const container = document.getElementById('query-log-container');
+            if (container) {
+              container.innerHTML = `
+                <div class="p-space-xl rounded-xl bg-surface-container-lowest text-center flex flex-col items-center justify-center shadow-sm">
+                  <span class="material-symbols-outlined text-4xl text-on-surface-variant/40 mb-space-sm">history_edu</span>
+                  <p class="font-headline-sm text-headline-sm text-on-surface font-semibold">Your ledger has been reset.</p>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Start a new query in the Discovery Suite to record semantic grant matches.</p>
+                </div>
+              `;
+            }
+          }
+        });
+      }
+
+      // Filter pills active visual toggle
+      document.querySelectorAll('.filter-pill').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.filter-pill').forEach(b => {
+            b.classList.remove('bg-primary-container', 'text-on-primary', 'font-bold');
+            b.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+          });
+          btn.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+          btn.classList.add('bg-primary-container', 'text-on-primary', 'font-bold');
+        });
+      });
+    });
+  </script>
+</div></main></div></body></html>

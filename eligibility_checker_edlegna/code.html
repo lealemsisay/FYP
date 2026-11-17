@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"tertiary-fixed-dim":"#e9c349","primary-container":"#1f3a30","secondary":"#006b5f","inverse-primary":"#afcdbf","surface-variant":"#d9e3f6","surface-container":"#e6eeff","background":"#f8f9ff","on-secondary-fixed-variant":"#005048","secondary-fixed-dim":"#4fdbc8","surface":"#f8f9ff","secondary-fixed":"#71f8e4","on-primary":"#ffffff","on-secondary":"#ffffff","surface-container-high":"#dee9fc","on-surface-variant":"#424845","on-primary-fixed":"#042017","primary-fixed-dim":"#afcdbf","error":"#ba1a1a","outline":"#727975","on-tertiary-fixed":"#241a00","surface-bright":"#f8f9ff","secondary-container":"#6df5e1","on-primary-container":"#87a497","outline-variant":"#c1c8c3","surface-container-highest":"#d9e3f6","on-primary-fixed-variant":"#314c42","surface-tint":"#486459","error-container":"#ffdad6","surface-container-lowest":"#ffffff","tertiary-fixed":"#ffe088","inverse-surface":"#27313f","on-background":"#121c2a","on-error":"#ffffff","surface-dim":"#d0dbed","on-tertiary-container":"#4e3d00","primary":"#08241b","on-error-container":"#93000a","tertiary":"#735c00","primary-fixed":"#cbeadb","on-surface":"#121c2a","surface-container-low":"#eff4ff","on-tertiary-fixed-variant":"#574500","tertiary-container":"#cba72f","on-secondary-container":"#006f64","on-tertiary":"#ffffff","inverse-on-surface":"#eaf1ff","on-secondary-fixed":"#00201c"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xl":"2.5rem","space-lg":"1.5rem","gutter":"1.5rem","margin":"1rem","space-sm":"0.5rem","gutter-desktop":"2rem","margin-desktop":"3.5rem","margin-tablet":"2rem","space-xs":"0.25rem","space-md":"1rem"},"fontFamily":{"headline-xl-mobile":["EB Garamond"],"label-md":["DM Sans"],"label-lg":["DM Sans"],"headline-md":["EB Garamond"],"body-md":["DM Sans"],"display-lg-mobile":["EB Garamond"],"display-lg":["EB Garamond"],"headline-sm":["EB Garamond"],"headline-xl":["EB Garamond"],"headline-lg":["EB Garamond"],"body-lg":["DM Sans"],"label-sm":["DM Sans"],"body-sm":["DM Sans"]},"fontSize":{"headline-xl-mobile":["2rem",{"lineHeight":"2.5rem","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.03em","fontWeight":"500"}],"label-lg":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0.02em","fontWeight":"500"}],"headline-md":["1.5rem",{"lineHeight":"2rem","fontWeight":"600"}],"body-md":["1rem",{"lineHeight":"1.5rem","fontWeight":"400"}],"display-lg-mobile":["2.5rem",{"lineHeight":"3rem","letterSpacing":"-0.015em","fontWeight":"600"}],"display-lg":["3.5rem",{"lineHeight":"4rem","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-sm":["1.25rem",{"lineHeight":"1.75rem","fontWeight":"600"}],"headline-xl":["2.5rem",{"lineHeight":"3rem","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-lg":["2rem",{"lineHeight":"2.5rem","fontWeight":"500"}],"body-lg":["1.125rem",{"lineHeight":"1.75rem","fontWeight":"400"}],"label-sm":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.05em","fontWeight":"700"}],"body-sm":["0.875rem",{"lineHeight":"1.25rem","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(31,58,48,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="h-20 px-space-lg flex items-center gap-space-sm"><img alt="Edlegna Official Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrBU_YJRUkq_IOaMvZWggJrddQlUyW__D7oZkYGwhOcOiDf2a5upcDEOJgzBoVTBOq15IrQInlfQ0LXsYOQQgpZ_93xZAQfyfQ9sbAd6_ms74gYYLXhkhMR8Ix4naHm8W1q5HHD2H8HCQHolG8rxNiT5Q0M1mB_G9p0_NWeRWHC7vfEhdk8OJsHoSJb5iuWSA3Wdv3YSonc-qBy1RPpbu-fwUHxiOeCXtySiaz6GCFQw"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight">Edlegna</span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Scholar Portal</span></div></div><div class="px-space-md py-space-sm"><span class="px-space-md font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Discovery Suite</span></div><nav class="flex flex-col gap-space-xs px-space-md" data-active-classes="bg-primary-container text-on-primary font-bold"><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="dashboard" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-xl">space_dashboard</span><span>Dashboard</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="discover-scholarships" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-xl">travel_explore</span><span>Discover Scholarships</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="ai-recommendations" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-xl text-secondary">auto_awesome</span><span>AI Recommendations</span></div><span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-space-xs py-0.5 rounded-full font-bold">12</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="eligibility-checker" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-xl">rule_folder</span><span>Eligibility Checker</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="saved-scholarships" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-xl">bookmark</span><span>Saved Scholarships</span></div><span class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-space-xs py-0.5 rounded-full">8</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="search-history" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-xl">history_edu</span><span>Search History</span></div></a></nav><div class="px-space-md pt-space-lg pb-space-sm"><span class="px-space-md font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Personal Dossier</span></div><nav class="flex flex-col gap-space-xs px-space-md" data-active-classes="bg-primary-container text-on-primary font-bold"><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="my-profile" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-xl">account_circle</span><span>My Profile</span></div><span class="text-tertiary font-label-sm text-label-sm font-bold">94%</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="notifications" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-xl">notifications</span><span>Notifications</span></div><span class="bg-error text-on-error font-label-sm text-label-sm px-space-xs py-0.5 rounded-full font-bold">3</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="settings" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-xl">settings</span><span>Settings</span></div></a></nav></div><div class="p-space-md bg-surface-container-low/60 m-space-md rounded-lg flex items-center gap-space-md"><img alt="Profile" class="w-10 h-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpdcdYuqyrb_ZMzNePg0SIMiVbRJLFZf9IsINb3g755YkRU991jpUVB3jWhUt9_WG-TQ-RLzJGAUI5oNEiTja_75fT1MSXaE2doRSeEJhixb_-9o5dbJ0mqaZRKWrD2lieG0JfIbWLkd0dajglKt8ALMppVyJngOq1Nz5-AEf6bIPVnwU1WIY7uCeMgthnv16Pug-YvoQF4Z54xqKkOOOwNAA_ACZRsAO2IsXST3g"/><div class="flex flex-col min-w-0 flex-1"><span class="font-label-lg text-label-lg font-bold text-on-surface truncate">Julian Vance</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Stanford Fellow '26</span></div><a class="text-on-surface-variant hover:text-error transition-colors" data-path="sign-in" href="#" title="Sign Out"><span class="material-symbols-outlined text-lg">logout</span></a></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(31,58,48,0.04)] z-40 flex items-center justify-between px-space-lg lg:px-margin-desktop"><div class="flex items-center gap-space-md"><img alt="Edlegna Official Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrBU_YJRUkq_IOaMvZWggJrddQlUyW__D7oZkYGwhOcOiDf2a5upcDEOJgzBoVTBOq15IrQInlfQ0LXsYOQQgpZ_93xZAQfyfQ9sbAd6_ms74gYYLXhkhMR8Ix4naHm8W1q5HHD2H8HCQHolG8rxNiT5Q0M1mB_G9p0_NWeRWHC7vfEhdk8OJsHoSJb5iuWSA3Wdv3YSonc-qBy1RPpbu-fwUHxiOeCXtySiaz6GCFQw"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-semibold hidden md:inline-block">Edlegna Academic Portfolio</span></div><div class="flex items-center gap-space-lg"><div class="relative hidden sm:block w-72"><span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-on-surface-variant text-lg">search</span><input class="w-full pl-10 pr-space-md py-space-xs bg-surface-container-lowest text-on-surface font-body-sm text-body-sm rounded-lg outline-none ring-1 ring-outline-variant focus:ring-primary" placeholder="Search grants, donors, fields..." type="text"/></div><a class="relative p-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-2xl">notifications</span><span class="absolute top-1 right-1 w-2.5 h-2.5 bg-error rounded-full"></span></a><div class="flex items-center gap-space-sm pl-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpdcdYuqyrb_ZMzNePg0SIMiVbRJLFZf9IsINb3g755YkRU991jpUVB3jWhUt9_WG-TQ-RLzJGAUI5oNEiTja_75fT1MSXaE2doRSeEJhixb_-9o5dbJ0mqaZRKWrD2lieG0JfIbWLkd0dajglKt8ALMppVyJngOq1Nz5-AEf6bIPVnwU1WIY7uCeMgthnv16Pug-YvoQF4Z54xqKkOOOwNAA_ACZRsAO2IsXST3g"/><span class="font-label-md text-label-md font-bold text-on-surface hidden lg:inline">J. Vance</span></div></div></header><main class="relative pt-20 bg-surface min-h-screen px-space-md lg:px-space-xl py-space-lg"><div class="flex flex-col w-full">
+<!-- Top Engine Header & Operational Notice -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg mb-space-xl">
+<div class="flex flex-col max-w-3xl">
+<div class="flex items-center gap-space-sm mb-space-xs">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
+          Charter Audit v4.2
+        </span>
+<span class="text-on-surface-variant font-label-sm text-label-sm tracking-widest uppercase">/ Rule-Bound Compliance</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary tracking-tight font-semibold">
+        Interactive Eligibility Evaluation Engine
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs leading-relaxed">
+        Deterministic rule verification against official donor charters. <span class="font-semibold text-primary">Note:</span> AI semantic match is calculated independently from deterministic criteria to avoid heuristic hallucination in formal admissions.
+      </p>
+</div>
+<!-- Live Telemetry / Verification Timestamp -->
+<div class="flex items-center gap-space-md p-space-md rounded-xl bg-surface-container-lowest shadow-sm self-start lg:self-end">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xl">gavel</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Charter Ledger</span>
+<span class="font-label-md text-label-md text-primary font-bold">DAAD Official Notice 2025/26</span>
+<span class="font-label-sm text-label-sm text-secondary">Verified 4 hours ago via API</span>
+</div>
+</div>
+</div>
+<!-- Primary Scholarship Selector & Dossier Summary Shelf -->
+<div class="relative bg-surface-container-lowest rounded-xl p-space-lg lg:p-space-xl shadow-sm mb-space-xl overflow-hidden">
+<!-- Ambient Botanical Accent Background -->
+<div class="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-secondary-fixed/20 blur-3xl pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg relative z-10">
+<!-- Target Selector & Scholar Profile Info -->
+<div class="lg:col-span-7 flex flex-col justify-between">
+<div class="flex flex-col">
+<div class="flex items-center justify-between mb-space-sm">
+<label class="font-label-sm text-label-sm uppercase tracking-wider font-bold text-on-surface-variant">Active Evaluated Grant</label>
+<span class="font-label-sm text-label-sm text-tertiary font-medium">Bonn, Germany • Full Funding</span>
+</div>
+<!-- Dropdown Pill -->
+<div class="relative group">
+<select class="w-full appearance-none bg-surface-container-low text-primary font-headline-sm text-headline-sm font-semibold rounded-lg px-space-md py-space-sm pr-12 focus:outline-none cursor-pointer shadow-sm transition-all hover:bg-surface-container">
+<option selected="" value="daad">DAAD Helmut-Schmidt-Programme (Germany) — Master's in Public Policy</option>
+<option value="chevening">Chevening Scholarship (Foreign, Commonwealth &amp; Development Office, UK)</option>
+<option value="erasmus">Erasmus Mundus Joint Masters: Big Data &amp; AI Governance (EU Consortium)</option>
+<option value="fulbright">Fulbright Foreign Student Program (United States)</option>
+</select>
+<div class="absolute right-space-md top-1/2 -translate-y-1/2 pointer-events-none flex items-center text-primary">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</div>
+<!-- Active Dossier Card Details -->
+<div class="mt-space-md p-space-md rounded-lg bg-surface-container-low flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-headline-sm text-headline-sm font-bold">
+                JV
+              </div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-primary">Julian Vance</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">B.Sc. Computer Science (CGPA: 3.86/4.0), Addis Ababa University</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs self-end sm:self-center">
+<span class="material-symbols-outlined text-secondary text-base">verified_user</span>
+<span class="font-label-sm text-label-sm font-bold text-secondary uppercase tracking-wider">Dossier Locked</span>
+</div>
+</div>
+</div>
+<!-- Semantic vs Deterministic Note Pill -->
+<div class="mt-space-md flex items-center gap-space-sm text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-secondary text-lg">auto_awesome</span>
+<span>Companion Metric: <strong>94.2% AI Semantic Match</strong> (Research Statement &amp; Alignment Score)</span>
+</div>
+</div>
+<!-- Overall Eligibility Gauge & Metrics Mosaic -->
+<div class="lg:col-span-5 flex flex-col justify-between bg-primary rounded-xl p-space-lg text-on-primary relative overflow-hidden">
+<div class="flex items-start justify-between relative z-10">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed">Consensus Verdict</span>
+<h3 class="font-headline-md text-headline-md font-semibold text-on-primary mt-0.5">Highly Eligible</h3>
+<p class="font-body-sm text-body-sm text-inverse-primary">1 Actionable item required to seal dossier</p>
+</div>
+<div class="p-space-xs bg-primary-container rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary-fixed text-2xl" style="font-variation-settings: 'FILL' 1;">rule</span>
+</div>
+</div>
+<!-- Segmented Rule Fulfillment Progress Meter -->
+<div class="my-space-md relative z-10">
+<div class="flex justify-between font-label-sm text-label-sm mb-1.5 font-bold">
+<span class="text-inverse-primary">Mandatory Clauses Met (4 of 5)</span>
+<span class="text-tertiary-fixed">80% Deterministic</span>
+</div>
+<!-- 5 Segment Progress Bar -->
+<div class="grid grid-cols-5 gap-1.5 h-2.5 w-full">
+<div class="h-full bg-secondary-fixed rounded-sm shadow-sm" title="Clause 1: Graduation Year (Passed)"></div>
+<div class="h-full bg-secondary-fixed rounded-sm shadow-sm" title="Clause 2: GPA Threshold (Passed)"></div>
+<div class="h-full bg-secondary-fixed rounded-sm shadow-sm" title="Clause 3: Target Country Origin (Passed)"></div>
+<div class="h-full bg-secondary-fixed rounded-sm shadow-sm" title="Clause 4: Discipline Fit (Passed)"></div>
+<div class="h-full bg-tertiary-container rounded-sm animate-pulse" title="Clause 5: Language Scorecard (Pending Verification)"></div>
+</div>
+</div>
+<!-- Metric Counter Badges -->
+<div class="grid grid-cols-3 gap-space-sm pt-space-xs relative z-10">
+<div class="p-space-xs rounded bg-primary-container/80 flex flex-col items-center justify-center">
+<span class="font-headline-sm text-headline-sm font-bold text-secondary-fixed">4</span>
+<span class="font-label-sm text-label-sm text-inverse-primary uppercase tracking-wide">Satisfied</span>
+</div>
+<div class="p-space-xs rounded bg-primary-container/80 flex flex-col items-center justify-center">
+<span class="font-headline-sm text-headline-sm font-bold text-tertiary-fixed">1</span>
+<span class="font-label-sm text-label-sm text-inverse-primary uppercase tracking-wide">Info Missing</span>
+</div>
+<div class="p-space-xs rounded bg-primary-container/80 flex flex-col items-center justify-center">
+<span class="font-headline-sm text-headline-sm font-bold text-on-primary">0</span>
+<span class="font-label-sm text-label-sm text-inverse-primary uppercase tracking-wide">Disqualified</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Section Title & Filter Tabs -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md mb-space-md">
+<div class="flex items-center gap-space-sm">
+<h2 class="font-headline-md text-headline-md text-primary font-semibold">
+        Deterministic Clause Breakdown
+      </h2>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-bold">5 Articles</span>
+</div>
+<div class="flex items-center gap-space-xs p-1 bg-surface-container-low rounded-lg self-start">
+<button class="px-space-md py-space-xs rounded font-label-md text-label-md font-bold bg-surface-container-lowest text-primary shadow-sm">
+        All Clauses (5)
+      </button>
+<button class="px-space-md py-space-xs rounded font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors">
+        Action Needed (1)
+      </button>
+<button class="px-space-md py-space-xs rounded font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors">
+        Verified (4)
+      </button>
+</div>
+</div>
+<!-- Detailed Requirement-by-Requirement Matrix -->
+<div class="flex flex-col gap-space-md mb-space-xl">
+<!-- Item 1: Graduation Year (Satisfied) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md items-start">
+<!-- Status Indicator Col -->
+<div class="lg:col-span-3 flex flex-col">
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-secondary-container/30 text-on-secondary-container font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-sm font-bold">check_circle</span>
+              Satisfied
+            </span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Clause 1.1</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary font-semibold">Degree Recency Window</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">DAAD Article 2 — Temporal Validity</span>
+</div>
+<!-- Comparison Rule vs Credential -->
+<div class="lg:col-span-5 flex flex-col gap-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Mandate Requirement</span>
+<p class="font-body-md text-body-md text-primary font-medium">
+              First academic degree (Bachelor's or equivalent) completed within the last 6 calendar years.
+            </p>
+</div>
+<div class="mt-space-xs p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Candidate Record Applied</span>
+<div class="flex items-center gap-space-sm mt-0.5">
+<span class="material-symbols-outlined text-secondary text-base">school</span>
+<span class="font-label-md text-label-md text-primary font-bold">Graduated July 2023 (1.5 years ago)</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Institution: Addis Ababa University • Faculty of Technology</span>
+</div>
+</div>
+<!-- Audit Verdict & Evidence -->
+<div class="lg:col-span-4 flex flex-col justify-between h-full bg-surface-container-low/50 p-space-md rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold mb-1">Audit Finding</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Within the 6-year window threshold (2019–2025). The temporal clause is conclusively cleared.
+            </p>
+</div>
+<div class="mt-space-md flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm text-secondary">description</span>
+<span>Verified Transcript #ET-8839</span>
+</div>
+<a class="font-label-sm text-label-sm text-primary font-bold hover:underline" href="#">View File</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 2: Minimum Academic Performance (Satisfied) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md items-start">
+<div class="lg:col-span-3 flex flex-col">
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-secondary-container/30 text-on-secondary-container font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-sm font-bold">check_circle</span>
+              Satisfied
+            </span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Clause 1.2</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary font-semibold">Minimum Performance Standard</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Bavarian Grade Equivalent Formula</span>
+</div>
+<div class="lg:col-span-5 flex flex-col gap-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Mandate Requirement</span>
+<p class="font-body-md text-body-md text-primary font-medium">
+              Minimum Academic Performance: CGPA ≥ 3.00 / 4.00 or equivalent upper-second class honors (German system grade ≤ 2.5).
+            </p>
+</div>
+<div class="mt-space-xs p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Candidate Record Applied</span>
+<div class="flex items-center gap-space-sm mt-0.5">
+<span class="material-symbols-outlined text-secondary text-base">military_tech</span>
+<span class="font-label-md text-label-md text-primary font-bold">Cumulative GPA: 3.86 / 4.00 (Summa Cum Laude)</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Calculated German Grade: 1.2 (Sehr Gut / Outstanding)</span>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col justify-between h-full bg-surface-container-low/50 p-space-md rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold mb-1">Audit Finding</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              CGPA of 3.86 comfortably exceeds the minimum threshold. Places candidate in the top 3% cohort for academic metrics.
+            </p>
+</div>
+<div class="mt-space-md flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm text-secondary">verified</span>
+<span>WES &amp; AAU Certified</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Delta: +0.86 GPA</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 3: Target Country / Regional Origin (Satisfied) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md items-start">
+<div class="lg:col-span-3 flex flex-col">
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-secondary-container/30 text-on-secondary-container font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-sm font-bold">check_circle</span>
+              Satisfied
+            </span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Clause 2.1</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary font-semibold">Geographic Target Eligibility</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">OECD / DAC List Compliance</span>
+</div>
+<div class="lg:col-span-5 flex flex-col gap-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Mandate Requirement</span>
+<p class="font-body-md text-body-md text-primary font-medium">
+              Citizenship of a developing or emerging country on the DAC List of Official Development Assistance (ODA) recipients.
+            </p>
+</div>
+<div class="mt-space-xs p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Candidate Record Applied</span>
+<div class="flex items-center gap-space-sm mt-0.5">
+<span class="material-symbols-outlined text-secondary text-base">public</span>
+<span class="font-label-md text-label-md text-primary font-bold">Citizenship: Ethiopia (Least Developed Countries Category)</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Current Residence: Addis Ababa, Ethiopia</span>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col justify-between h-full bg-surface-container-low/50 p-space-md rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold mb-1">Audit Finding</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Ethiopia is formally listed under eligible partner nations for the Helmut-Schmidt Programme. Non-residence in Germany verified.
+            </p>
+</div>
+<div class="mt-space-md flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm text-secondary">badge</span>
+<span>National Passport Verified</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Full Clearance</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 4: Discipline Alignment (Satisfied) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md items-start">
+<div class="lg:col-span-3 flex flex-col">
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-secondary-container/30 text-on-secondary-container font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-sm font-bold">check_circle</span>
+              Satisfied
+            </span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Clause 3.1</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary font-semibold">Discipline Compatibility</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Cross-Disciplinary Policy Matrix</span>
+</div>
+<div class="lg:col-span-5 flex flex-col gap-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Mandate Requirement</span>
+<p class="font-body-md text-body-md text-primary font-medium">
+              Completed degree in Social Sciences, Political Science, Law, Economics, or Computational/Data Science applied to public sector issues.
+            </p>
+</div>
+<div class="mt-space-xs p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Candidate Record Applied</span>
+<div class="flex items-center gap-space-sm mt-0.5">
+<span class="material-symbols-outlined text-secondary text-base">account_tree</span>
+<span class="font-label-md text-label-md text-primary font-bold">B.Sc. in Computer Science (Public Health Informatics Minor)</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Curriculum includes 18 ECTS in Quantitative Public Policy &amp; Statistics</span>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col justify-between h-full bg-surface-container-low/50 p-space-md rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold mb-1">Audit Finding</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Interdisciplinary data governance track accepted at host institution (University of Passau &amp; Willy Brandt School).
+            </p>
+</div>
+<div class="mt-space-md flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm text-secondary">approval</span>
+<span>Faculty Match Confirmed</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Qualified Track</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 5: Certified English Language Test (GOLD / AMBER - INFORMATION MISSING) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-md border-l-4 border-l-tertiary-container relative overflow-hidden">
+<!-- Glow effect for actionable card -->
+<div class="absolute right-0 top-0 w-64 h-full bg-gradient-to-l from-tertiary-fixed/10 to-transparent pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md items-start relative z-10">
+<div class="lg:col-span-3 flex flex-col">
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-sm font-bold">pending</span>
+              Action Required
+            </span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Clause 4.1</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary font-semibold">Certified Language Proficiency</h4>
+<span class="font-body-sm text-body-sm text-tertiary font-bold mt-1">Pending Scorecard Upload</span>
+</div>
+<div class="lg:col-span-5 flex flex-col gap-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Mandate Requirement</span>
+<p class="font-body-md text-body-md text-primary font-medium">
+              Certified English Language Test: Academic IELTS overall score ≥ 6.5 (min. 6.0 per section) or TOEFL iBT ≥ 80 (or Cambridge C1).
+            </p>
+</div>
+<div class="mt-space-xs p-space-sm rounded-lg bg-tertiary-fixed/20 flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Candidate Record Applied</span>
+<div class="flex items-center gap-space-sm mt-0.5">
+<span class="material-symbols-outlined text-tertiary text-base">warning</span>
+<span class="font-label-md text-label-md text-primary font-bold">Self-declared C1 English proficiency on file</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Official verified scorecard document is not yet attached to candidate portfolio.</span>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col justify-between h-full bg-surface-container-low p-space-md rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary font-bold mb-1">Clause Advisory Notice</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+              Self-declared proficiency is pending certified scorecard verification. <strong>Missing documents do not disqualify your application</strong> but must be submitted prior to the December 15 official DAAD deadline.
+            </p>
+</div>
+<div class="mt-space-md flex items-center justify-between pt-space-xs">
+<button class="inline-flex items-center gap-1.5 px-space-md py-space-xs rounded bg-tertiary text-on-tertiary font-label-md text-label-md font-bold shadow-sm hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined text-base">cloud_upload</span>
+              Upload Scorecard
+            </button>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">Target: Dec 15</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Editorial Institutional Context & Reference Material -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg mb-space-xl">
+<!-- Visual Institutional Card -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col">
+<div class="h-44 w-full bg-cover bg-center relative" data-alt="Classic collegiate university building exterior in Bonn Germany with sandstone gothic revival architecture, ivy vines climbing arched windows, and lush autumn university garden trees under crisp diffused morning light." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA7DkEY6Xc8PzE74FyfYWqdHlzKjRsfcQuoNv_ujuJ5Oxq4sb2PNxlLk3zsGv7hhXnBgRBxWdNMxvQQoqKTAKvUmRsHgoK-WML2EAImtgFrioXzQU8Oj1pa3sX4pGSsH4x_hsazjXQat5iJswrOfy0p3elTFw5TkwK-jUuwHbSbdgIPVscUD42w7HaHOBELhgDNmEcdE-JhL7wpuzdB20R_FOoX5p_MRCxqwUPk0e8')">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-space-md left-space-md right-space-md flex items-end justify-between text-on-primary">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed">Target Donor</span>
+<h4 class="font-headline-sm text-headline-sm font-bold">DAAD Head Office</h4>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 bg-primary-container/80 rounded">Kennedyallee, Bonn</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1">
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          The Helmut-Schmidt-Programme offers master's scholarships for future leaders in politics, law, economics, and administration. Fully funded including monthly stipends, health insurance, and study grants.
+        </p>
+<div class="flex items-center justify-between pt-space-md mt-space-sm border-t border-surface-container">
+<span class="font-label-sm text-label-sm text-primary font-bold">Host Consortium</span>
+<span class="font-label-sm text-label-sm text-secondary">8 Participating Universities</span>
+</div>
+</div>
+</div>
+<!-- Comparative Score Analysis Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Holistic Evaluation</span>
+<span class="material-symbols-outlined text-secondary">analytics</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary font-semibold">Dual-Engine Diagnostics</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+          Edlegna runs two distinct verification pipelines for every student-scholarship pair:
+        </p>
+<div class="mt-space-md flex flex-col gap-space-sm">
+<div class="p-space-sm rounded bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base">rule</span>
+<span class="font-label-md text-label-md text-primary font-bold">Deterministic Criteria</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-secondary">80% Verified</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base">psychology</span>
+<span class="font-label-md text-label-md text-primary font-bold">AI Semantic Alignment</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-secondary">94% Affinity</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-low/40 -mx-space-lg -mb-space-lg p-space-md rounded-b-xl flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Recommended Next Step:</span>
+<span class="font-label-sm text-label-sm font-bold text-primary">Resolve Clause 4.1</span>
+</div>
+</div>
+<!-- Academic Advisory Contacts Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Advisory Desk</span>
+<span class="material-symbols-outlined text-primary">contact_support</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary font-semibold">Scholar Support Desk</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+          Uncertain about whether your alternative qualifications meet German credential evaluation standards?
+        </p>
+<div class="mt-space-md flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-secondary text-base">support_agent</span>
+<span>AAU Academic Advisory Liaison</span>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-secondary text-base">schedule</span>
+<span>DAAD Webinar Session: Nov 28, 2024</span>
+</div>
+</div>
+</div>
+<button class="w-full mt-space-md py-space-sm px-space-md rounded border border-outline-variant text-primary font-label-md text-label-md font-bold hover:bg-surface-container-low transition-colors">
+        Request Advisory Review
+      </button>
+</div>
+</div>
+<!-- Bottom Command Bar / Primary Action Shelf -->
+<div class="sticky bottom-4 z-30 bg-surface-container-lowest/95 backdrop-blur-md rounded-xl p-space-md lg:p-space-lg shadow-xl mb-space-lg">
+<div class="flex flex-col lg:flex-row items-center justify-between gap-space-md">
+<!-- Left side summary indicators -->
+<div class="flex items-center gap-space-md w-full lg:w-auto">
+<div class="w-10 h-10 rounded-lg bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed shrink-0">
+<span class="material-symbols-outlined text-xl">upload_file</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg font-bold text-primary truncate">1 Critical Action Required: English Scorecard</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Uploading IELTS or TOEFL elevates deterministic status to 100%.</span>
+</div>
+</div>
+<!-- Right side action buttons group -->
+<div class="flex flex-wrap items-center gap-space-sm w-full lg:w-auto justify-end">
+<!-- Switch scholarship secondary -->
+<button class="px-space-md py-space-sm rounded bg-surface-container-low text-primary font-label-lg text-label-lg font-bold hover:bg-surface-container transition-colors flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-base">sync_alt</span>
+          Check Another Grant
+        </button>
+<!-- Export audit PDF -->
+<button class="px-space-md py-space-sm rounded bg-surface-container-low text-primary font-label-lg text-label-lg font-bold hover:bg-surface-container transition-colors flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-base">picture_as_pdf</span>
+          Export Audit (PDF)
+        </button>
+<!-- Profile Update -->
+<button class="px-space-md py-space-sm rounded bg-surface-container-low text-primary font-label-lg text-label-lg font-bold hover:bg-surface-container transition-colors flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-base">badge</span>
+          Update Credentials
+        </button>
+<!-- Primary Action CTA -->
+<button class="px-space-lg py-space-sm rounded bg-primary text-on-primary font-label-lg text-label-lg font-bold hover:bg-primary-container transition-colors flex items-center gap-space-xs shadow-md">
+<span class="material-symbols-outlined text-base text-secondary-fixed">cloud_upload</span>
+          Upload Missing Scorecard
+        </button>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

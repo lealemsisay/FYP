@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-secondary-container":"#006f64","on-background":"#121c2a","secondary-container":"#6df5e1","surface":"#f8f9ff","surface-container":"#e6eeff","on-tertiary":"#ffffff","background":"#f8f9ff","inverse-on-surface":"#eaf1ff","on-tertiary-container":"#4e3d00","inverse-primary":"#afcdbf","surface-bright":"#f8f9ff","on-primary":"#ffffff","surface-variant":"#d9e3f6","on-surface-variant":"#424845","outline":"#727975","surface-dim":"#d0dbed","on-primary-fixed":"#042017","secondary-fixed-dim":"#4fdbc8","primary-container":"#1f3a30","on-secondary-fixed-variant":"#005048","surface-container-highest":"#d9e3f6","on-tertiary-fixed-variant":"#574500","on-tertiary-fixed":"#241a00","on-secondary-fixed":"#00201c","outline-variant":"#c1c8c3","error":"#ba1a1a","surface-container-low":"#eff4ff","tertiary-fixed":"#ffe088","primary":"#08241b","secondary-fixed":"#71f8e4","primary-fixed":"#cbeadb","on-primary-container":"#87a497","on-primary-fixed-variant":"#314c42","secondary":"#006b5f","tertiary-container":"#cba72f","on-secondary":"#ffffff","surface-container-lowest":"#ffffff","on-error":"#ffffff","surface-container-high":"#dee9fc","on-error-container":"#93000a","inverse-surface":"#27313f","on-surface":"#121c2a","tertiary-fixed-dim":"#e9c349","primary-fixed-dim":"#afcdbf","error-container":"#ffdad6","tertiary":"#735c00","surface-tint":"#486459"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"gutter-desktop":"2rem","space-md":"1rem","margin-desktop":"3.5rem","space-sm":"0.5rem","space-xl":"2.5rem","space-lg":"1.5rem","margin-tablet":"2rem","space-xs":"0.25rem","margin":"1rem","gutter":"1.5rem"},"fontFamily":{"headline-xl-mobile":["EB Garamond"],"label-lg":["DM Sans"],"body-lg":["DM Sans"],"headline-xl":["EB Garamond"],"body-md":["DM Sans"],"label-md":["DM Sans"],"headline-md":["EB Garamond"],"headline-sm":["EB Garamond"],"display-lg":["EB Garamond"],"headline-lg":["EB Garamond"],"label-sm":["DM Sans"],"display-lg-mobile":["EB Garamond"],"body-sm":["DM Sans"]},"fontSize":{"headline-xl-mobile":["2rem",{"lineHeight":"2.5rem","letterSpacing":"-0.01em","fontWeight":"600"}],"label-lg":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0.02em","fontWeight":"500"}],"body-lg":["1.125rem",{"lineHeight":"1.75rem","fontWeight":"400"}],"headline-xl":["2.5rem",{"lineHeight":"3rem","letterSpacing":"-0.015em","fontWeight":"600"}],"body-md":["1rem",{"lineHeight":"1.5rem","fontWeight":"400"}],"label-md":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.03em","fontWeight":"500"}],"headline-md":["1.5rem",{"lineHeight":"2rem","fontWeight":"600"}],"headline-sm":["1.25rem",{"lineHeight":"1.75rem","fontWeight":"600"}],"display-lg":["3.5rem",{"lineHeight":"4rem","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-lg":["2rem",{"lineHeight":"2.5rem","fontWeight":"500"}],"label-sm":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.05em","fontWeight":"700"}],"display-lg-mobile":["2.5rem",{"lineHeight":"3rem","letterSpacing":"-0.015em","fontWeight":"600"}],"body-sm":["0.875rem",{"lineHeight":"1.25rem","fontWeight":"400"}]}}}}</script></head><body class="bg-surface text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="px-6 py-5 flex items-center justify-between"><div class="flex items-center gap-3"><div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center text-on-primary font-headline-md text-headline-md shadow-[0_2px_8px_rgba(8,36,27,0.18)]">E</div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-tight tracking-tight">Edlegna</span><span class="font-label-sm text-label-sm text-on-surface-variant">Scholarly AI Suite</span></div></div><span class="px-2 py-0.5 rounded-full bg-tertiary-container/20 text-on-tertiary-container font-label-sm text-label-sm">ADMIN</span></div><div class="px-4 py-2"><div class="px-3 py-1.5 rounded-lg bg-surface-container-low flex items-center gap-2 text-on-surface-variant font-label-md text-label-md"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span>Engine Sync: 99.8%</span></div></div><nav class="px-3 py-3 flex flex-col gap-6" data-active-classes="bg-primary text-on-primary rounded-lg"><div class="flex flex-col gap-1"><div class="px-3 py-1 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">Core Governance</div><a class="flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="dashboard" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Dashboard</span></div></a><a class="flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="scholarship-management" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">folder_open</span><span>Scholarships</span></div><span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">1,420</span></a><a class="flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="add-scholarship" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">add_circle</span><span>Add Scholarship</span></div></a><a class="flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="eligibility-engine" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">tune</span><span>Eligibility Engine</span></div></a><a class="flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="categories-and-filters" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">filter_list</span><span>Categories &amp; Rules</span></div></a></div><div class="flex flex-col gap-1"><div class="px-3 py-1 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">Student &amp; Access Registry</div><a class="flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="student-management" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">group</span><span>Students</span></div><span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">24.8k</span></a><a class="flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="verification-requests" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">verified_user</span><span>Verification</span></div><span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">18 Pending</span></a></div><div class="flex flex-col gap-1"><div class="px-3 py-1 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">Intelligence &amp; Audit</div><a class="flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="search-ai-analytics" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">analytics</span><span>Search Analytics</span></div></a><a class="flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="recommendation-analytics" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">psychology</span><span>Recommendation AI</span></div></a><a class="flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="audit-and-compliance-reports" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">policy</span><span>Audit &amp; Compliance</span></div></a></div><div class="flex flex-col gap-1"><div class="px-3 py-1 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">System Configuration</div><a class="flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="administrator-notifications" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">notifications</span><span>Alerts &amp; Logs</span></div><span class="px-2 py-0.5 rounded-full bg-error text-on-error font-label-sm text-label-sm">5</span></a><a class="flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="system-settings" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">settings</span><span>System Settings</span></div></a><a class="flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="login" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">logout</span><span>Sign Out</span></div></a></div></nav></div><div class="p-4 flex flex-col gap-3"><div class="p-3 rounded-xl bg-surface-container-low flex flex-col gap-2"><div class="flex items-center justify-between text-on-surface font-label-sm text-label-sm"><span class="font-medium">Addis-01 Cluster</span><span class="text-secondary font-semibold">Healthy</span></div><div class="w-full bg-surface-container-highest rounded-full h-1.5"><div class="bg-secondary h-1.5 rounded-full w-[42%]"></div></div><div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm"><span>Storage 42%</span><span>NVMe High-IO</span></div></div><div class="p-3 rounded-xl bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] flex items-center justify-between"><div class="flex items-center gap-3 overflow-hidden"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col truncate"><span class="font-label-md text-label-md text-on-surface font-semibold truncate">Dr. Aster Berhanu</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Superadmin</span></div></div><span class="material-symbols-outlined text-on-surface-variant text-[18px]">more_vert</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-gutter-desktop"><div class="h-16 flex items-center justify-between gap-6"><div class="flex items-center gap-4 min-w-0"><div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md"><span class="material-symbols-outlined text-[18px] text-primary">account_balance</span><span class="text-on-surface font-semibold">Edlegna Portal</span><span class="text-outline-variant">/</span><span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-mono">v4.2.1-prod</span></div></div><div class="flex-1 max-w-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">search</span><input class="w-full pl-9 pr-4 py-1.5 rounded-xl bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px_rgba(8,36,27,0.12)] transition-all" placeholder="Search scholarships, students, audit logs, rules..." type="text"/></div></div><div class="flex items-center gap-4 flex-shrink-0"><div class="hidden xl:flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-low font-label-sm text-label-sm text-on-surface"><span class="w-2 h-2 rounded-full bg-secondary-container"></span><span class="font-medium text-on-surface-variant">AI Semantic Engine Active</span></div><button class="relative p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><div class="h-6 w-px bg-surface-container-highest"></div><div class="flex items-center gap-3 pl-1"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden md:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Dr. Aster Berhanu</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Lead Administrator</span></div><span class="material-symbols-outlined text-on-surface-variant text-[18px]">expand_more</span></div></div></div></header><main class="relative pt-16 w-full px-gutter-desktop bg-surface min-h-screen"><div class="flex flex-col w-full pb-16">
+<!-- Top Academic Dossier Header & Breadcrumb Context -->
+<div class="flex flex-col gap-6 pt-6 pb-8">
+<div class="flex flex-wrap items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Student &amp; Access Registry</span>
+<span class="text-outline-variant font-label-md">/</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Academic Verification Queue</span>
+<div class="flex items-center gap-2 px-2.5 py-1 rounded-full bg-secondary-container/20 text-on-secondary-container font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+<span>Registrar Sync: Active • 24,850 Records</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<button class="px-4 py-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-lg text-label-lg transition-colors flex items-center gap-2 shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">download</span>
+<span>Export Student Roster (CSV)</span>
+</button>
+<button class="px-4 py-2 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg transition-all flex items-center gap-2 shadow-md">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Bulk Verification Audit</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-1 max-w-4xl">
+<h1 class="font-headline-xl text-headline-xl text-primary tracking-tight">Student Management &amp; Academic Verification</h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Review institutional scholar dossiers, authenticate academic credentials via AAU, Jimma, and partner registrar nodes, calibrate GPA scale translations, and grant certified AI matching clearance.
+      </p>
+</div>
+</div>
+<!-- Telemetry / Registry Stat Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 mb-8">
+<!-- Stat 1 -->
+<div class="p-5 rounded-xl bg-surface-container-lowest shadow-[0_1px_3px_rgba(31,58,48,0.04),0_4px_12px_rgba(31,58,48,0.02)] flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Total Registered Scholars</span>
+<span class="font-headline-lg text-headline-lg text-primary font-bold mt-1">24,850</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">school</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-1 text-secondary font-semibold">
+<span class="material-symbols-outlined text-[16px]">trending_up</span> +1,240 this month
+        </span>
+<span>94.2% completed</span>
+</div>
+</div>
+<!-- Stat 2 (Priority Alert) -->
+<div class="p-5 rounded-xl bg-surface-container-lowest shadow-[0_1px_3px_rgba(31,58,48,0.04),0_4px_12px_rgba(31,58,48,0.02)] relative overflow-hidden flex flex-col justify-between">
+<div class="absolute top-0 right-0 w-2 h-full bg-tertiary-container"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary font-bold uppercase tracking-wider">Awaiting Document Audit</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">18</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">Priority Queue</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-xl bg-tertiary-container/15 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[22px]">pending_actions</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center gap-2 text-tertiary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">priority_high</span>
+<span>Registrar stamp confirmation pending</span>
+</div>
+</div>
+<!-- Stat 3 -->
+<div class="p-5 rounded-xl bg-surface-container-lowest shadow-[0_1px_3px_rgba(31,58,48,0.04),0_4px_12px_rgba(31,58,48,0.02)] flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Verified Scholars</span>
+<span class="font-headline-lg text-headline-lg text-primary font-bold mt-1">23,410</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">verified_user</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between text-on-surface-variant font-label-md text-label-md">
+<span class="text-secondary font-medium">94.2% verified</span>
+<span>AAU • Jimma • Hawassa</span>
+</div>
+</div>
+<!-- Stat 4 -->
+<div class="p-5 rounded-xl bg-surface-container-lowest shadow-[0_1px_3px_rgba(31,58,48,0.04),0_4px_12px_rgba(31,58,48,0.02)] flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Flagged Discrepancies</span>
+<span class="font-headline-lg text-headline-lg text-error font-bold mt-1">42</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-error-container/40 flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[22px]">flag</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between text-on-surface-variant font-label-md text-label-md">
+<span class="text-error font-medium">Action Required</span>
+<span>GPA mismatches / unsealed scans</span>
+</div>
+</div>
+</div>
+<!-- Priority Verification Action Hub (Split Preview Cards) -->
+<div class="p-6 rounded-2xl bg-surface-container-low mb-8 shadow-sm flex flex-col gap-4">
+<div class="flex flex-wrap items-center justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-tertiary-container/30 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]">assignment_turned_in</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Priority Transcript &amp; Credential Verification</h2>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">18 Awaiting Sign-off</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Fast-track high-probability scholarship applicants with pending registrar attestations.</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">refresh</span> Refresh Stream
+        </button>
+<button class="px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors flex items-center gap-1.5 shadow-sm">
+<span>Batch Sign 3 Validated</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Review Dossier Grid (3 High-priority applicants) -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-4 pt-2">
+<!-- Applicant 1 -->
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-[0_1px_3px_rgba(31,58,48,0.04)] flex flex-col justify-between gap-4">
+<div class="flex flex-col gap-3">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-xl bg-primary flex items-center justify-center text-on-primary font-headline-sm font-semibold flex-shrink-0 shadow-sm">
+                ST
+              </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg font-bold text-on-surface truncate">Selamawit Tadesse</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">#EDL-STU-8821</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed/70 text-on-tertiary-fixed font-label-sm text-label-sm font-semibold flex-shrink-0">
+              DAAD &amp; Rhodes
+            </span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col gap-2 font-label-md text-label-md">
+<div class="flex items-center justify-between text-on-surface">
+<span class="text-on-surface-variant">Institution:</span>
+<span class="font-semibold text-right truncate">Addis Ababa University</span>
+</div>
+<div class="flex items-center justify-between text-on-surface">
+<span class="text-on-surface-variant">Discipline &amp; Standing:</span>
+<span class="font-medium text-right">B.Sc. SE • GPA <span class="font-bold text-secondary">3.92</span></span>
+</div>
+<div class="flex items-center justify-between text-on-surface">
+<span class="text-on-surface-variant">Pending Document:</span>
+<span class="flex items-center gap-1 text-primary font-semibold">
+<span class="material-symbols-outlined text-[15px] text-tertiary">description</span> Official WES Transcript
+              </span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-1">
+<button class="flex-1 py-1.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-medium transition-colors flex items-center justify-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">check</span>
+            Approve Credentials
+          </button>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" title="View Dossier Document">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" title="Request Re-upload">
+<span class="material-symbols-outlined text-[18px]">undo</span>
+</button>
+</div>
+</div>
+<!-- Applicant 2 -->
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-[0_1px_3px_rgba(31,58,48,0.04)] flex flex-col justify-between gap-4">
+<div class="flex flex-col gap-3">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-xl bg-primary-container flex items-center justify-center text-on-primary font-headline-sm font-semibold flex-shrink-0 shadow-sm">
+                JV
+              </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg font-bold text-on-surface truncate">Julian Vance</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">#EDL-STU-7904</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/30 text-on-secondary-container font-label-sm text-label-sm font-semibold flex-shrink-0">
+              Erasmus Mundus
+            </span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col gap-2 font-label-md text-label-md">
+<div class="flex items-center justify-between text-on-surface">
+<span class="text-on-surface-variant">Institution:</span>
+<span class="font-semibold text-right truncate">Addis Ababa University</span>
+</div>
+<div class="flex items-center justify-between text-on-surface">
+<span class="text-on-surface-variant">Discipline &amp; Standing:</span>
+<span class="font-medium text-right">CS / Pub Health • GPA <span class="font-bold text-secondary">3.86</span></span>
+</div>
+<div class="flex items-center justify-between text-on-surface">
+<span class="text-on-surface-variant">Pending Document:</span>
+<span class="flex items-center gap-1 text-primary font-semibold">
+<span class="material-symbols-outlined text-[15px] text-secondary">translate</span> IELTS 8.0 TRF Scorecard
+              </span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-1">
+<button class="flex-1 py-1.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-medium transition-colors flex items-center justify-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+            Verify TRF Key
+          </button>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" title="View TRF Scan">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container text-error hover:bg-error-container/30 transition-colors" title="Flag Discrepancy">
+<span class="material-symbols-outlined text-[18px]">flag</span>
+</button>
+</div>
+</div>
+<!-- Applicant 3 -->
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-[0_1px_3px_rgba(31,58,48,0.04)] flex flex-col justify-between gap-4">
+<div class="flex flex-col gap-3">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-xl bg-tertiary-container flex items-center justify-center text-on-tertiary-container font-headline-sm font-semibold flex-shrink-0 shadow-sm">
+                DM
+              </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg font-bold text-on-surface truncate">Dawit Mengistu</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">#EDL-STU-9102</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold flex-shrink-0">
+              TU Munich Cand.
+            </span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col gap-2 font-label-md text-label-md">
+<div class="flex items-center justify-between text-on-surface">
+<span class="text-on-surface-variant">Institution:</span>
+<span class="font-semibold text-right truncate">Hawassa University</span>
+</div>
+<div class="flex items-center justify-between text-on-surface">
+<span class="text-on-surface-variant">Discipline &amp; Standing:</span>
+<span class="font-medium text-right">Mech. Eng. • GPA <span class="font-bold text-secondary">3.84</span></span>
+</div>
+<div class="flex items-center justify-between text-on-surface">
+<span class="text-on-surface-variant">Pending Document:</span>
+<span class="flex items-center gap-1 text-primary font-semibold">
+<span class="material-symbols-outlined text-[15px] text-tertiary">history_edu</span> Degree Certificate Scan
+              </span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-1">
+<button class="flex-1 py-1.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-medium transition-colors flex items-center justify-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">search</span>
+            Match Registrar Stamp
+          </button>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" title="View Document">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" title="Message Student">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Search, Filter & View Controls -->
+<div class="flex flex-col gap-4 mb-6">
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4">
+<!-- Search Input -->
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-[20px]">person_search</span>
+<input class="w-full pl-11 pr-4 py-2.5 rounded-xl bg-surface-container-lowest text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest shadow-[0_1px_3px_rgba(31,58,48,0.06)] transition-all placeholder:text-on-surface-variant/70" placeholder="Search students by full name, ID, institutional email, university, or program..." type="text"/>
+</div>
+<!-- Quick Filter Pills & Layout Modes -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 lg:pb-0">
+<button class="px-3.5 py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-medium whitespace-nowrap shadow-sm flex items-center gap-1.5">
+<span>All Students</span>
+<span class="px-1.5 py-0.2 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm">24,850</span>
+</button>
+<button class="px-3.5 py-2 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md whitespace-nowrap transition-colors flex items-center gap-1.5 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>Pending Verification</span>
+<span class="px-1.5 py-0.2 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">18</span>
+</button>
+<button class="px-3.5 py-2 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md whitespace-nowrap transition-colors flex items-center gap-1.5 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span>Action Required</span>
+<span class="px-1.5 py-0.2 rounded-full bg-error-container text-error font-label-sm text-label-sm font-bold">42</span>
+</button>
+<div class="h-6 w-px bg-surface-container-highest mx-1 hidden sm:block"></div>
+<div class="flex items-center bg-surface-container-lowest rounded-lg p-0.5 shadow-sm">
+<button class="p-1.5 rounded bg-surface-container text-primary" title="Table View">
+<span class="material-symbols-outlined text-[18px]">table_rows</span>
+</button>
+<button class="p-1.5 rounded text-on-surface-variant hover:text-on-surface transition-colors" title="Grid Dossier View">
+<span class="material-symbols-outlined text-[18px]">grid_view</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Parameter Filter Dropdown Bars -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+<!-- University -->
+<div class="relative">
+<select class="w-full appearance-none pl-3 pr-8 py-2 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm focus:outline-none cursor-pointer">
+<option>All Partner Universities</option>
+<option>Addis Ababa University (AAU)</option>
+<option>Jimma University</option>
+<option>Hawassa University</option>
+<option>Bahir Dar University</option>
+<option>Mekelle University</option>
+<option>Arba Minch University</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[18px]">expand_more</span>
+</div>
+<!-- Department / Field -->
+<div class="relative">
+<select class="w-full appearance-none pl-3 pr-8 py-2 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm focus:outline-none cursor-pointer">
+<option>All Disciplines &amp; Faculties</option>
+<option>Computer Science &amp; AI</option>
+<option>Software &amp; Electrical Eng.</option>
+<option>Medicine &amp; Public Health</option>
+<option>Agronomy &amp; Earth Sciences</option>
+<option>Economics &amp; Development</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[18px]">expand_more</span>
+</div>
+<!-- Level -->
+<div class="relative">
+<select class="w-full appearance-none pl-3 pr-8 py-2 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm focus:outline-none cursor-pointer">
+<option>All Academic Degrees</option>
+<option>Undergraduate Finalist</option>
+<option>Master's Candidate</option>
+<option>Doctoral / Ph.D.</option>
+<option>Postdoctoral Fellow</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[18px]">expand_more</span>
+</div>
+<!-- Verification Status -->
+<div class="relative">
+<select class="w-full appearance-none pl-3 pr-8 py-2 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm focus:outline-none cursor-pointer">
+<option>All Verification Statuses</option>
+<option>Verified Dossier</option>
+<option>Pending Verification</option>
+<option>Needs Document Re-upload</option>
+<option>Registrar Confirmed</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[18px]">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Primary Student Directory Data Table Container -->
+<div class="w-full rounded-2xl bg-surface-container-lowest shadow-[0_1px_3px_rgba(31,58,48,0.04),0_6px_20px_rgba(31,58,48,0.03)] overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3.5 pl-5 pr-2 w-10">
+<input class="rounded text-primary focus:ring-0 cursor-pointer accent-primary" type="checkbox"/>
+</th>
+<th class="py-3.5 px-4 font-semibold">Scholar &amp; ID</th>
+<th class="py-3.5 px-4 font-semibold">University &amp; Faculty</th>
+<th class="py-3.5 px-4 font-semibold">Academic Standing</th>
+<th class="py-3.5 px-4 font-semibold">Target Opportunities</th>
+<th class="py-3.5 px-4 font-semibold">Verification Status</th>
+<th class="py-3.5 px-4 font-semibold">Account State</th>
+<th class="py-3.5 pr-5 pl-4 text-right font-semibold">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high/60 font-body-sm text-body-sm text-on-surface">
+<!-- Row 1: Selamawit Tadesse -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-4 pl-5 pr-2">
+<input class="rounded text-primary focus:ring-0 cursor-pointer accent-primary" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-on-primary font-headline-sm font-semibold text-[13px] flex-shrink-0">
+                  ST
+                </div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg font-bold text-on-surface truncate">Selamawit Tadesse</span>
+<span class="material-symbols-outlined text-[16px] text-secondary" title="National Honor Scholar">workspace_premium</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="font-mono">#EDL-STU-8821</span>
+<span>•</span>
+<span class="truncate">selamawit.t@aau.edu.et</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">Addis Ababa University</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">B.Sc. Software Eng • Class '25</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm font-bold text-secondary">
+                    3.92 / 4.00
+                  </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">DE: 1.1</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">IELTS: 8.5 • GRE: 328</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-full bg-secondary-container/20 text-on-secondary-container font-label-sm text-label-sm font-semibold">
+                  5 High Match
+                </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">DAAD, Rhodes</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-1">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold w-max">
+<span class="material-symbols-outlined text-[14px]">pending</span>
+                  Review (Transcript)
+                </span>
+<span class="font-label-sm text-label-sm text-tertiary">AAU stamp verification</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 text-secondary font-label-md text-label-md font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Active
+              </span>
+</td>
+<td class="py-4 pr-5 pl-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2.5 py-1 rounded bg-surface-container text-primary font-label-sm text-label-sm hover:bg-surface-container-high transition-colors font-medium">
+                  Review
+                </button>
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface transition-colors" title="More Options">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Julian Vance -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-4 pl-5 pr-2">
+<input class="rounded text-primary focus:ring-0 cursor-pointer accent-primary" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-primary-container flex items-center justify-center text-on-primary font-headline-sm font-semibold text-[13px] flex-shrink-0">
+                  JV
+                </div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg font-bold text-on-surface truncate">Julian Vance</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="font-mono">#EDL-STU-7904</span>
+<span>•</span>
+<span class="truncate">julian.v@postgrad.aau.et</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">Addis Ababa University</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">M.Sc. Health Informatics • Class '24</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm font-bold text-on-surface">
+                    3.86 / 4.00
+                  </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">DE: 1.3</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">IELTS: 8.0</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">
+                  3 Saved
+                </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Erasmus, Chevening</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-container/20 text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                Verified Dossier
+              </span>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 text-secondary font-label-md text-label-md font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Active
+              </span>
+</td>
+<td class="py-4 pr-5 pl-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm hover:text-on-surface hover:bg-surface-container-high transition-colors font-medium">
+                  View
+                </button>
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Dr. Hana Kebede -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-4 pl-5 pr-2">
+<input class="rounded text-primary focus:ring-0 cursor-pointer accent-primary" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-on-primary font-headline-sm font-semibold text-[13px] flex-shrink-0">
+                  HK
+                </div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg font-bold text-on-surface truncate">Dr. Hana Kebede</span>
+<span class="px-1.5 py-0.2 rounded bg-tertiary-container/20 text-on-tertiary-container font-label-sm text-label-sm font-semibold">Postdoc</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="font-mono">#EDL-STU-6120</span>
+<span>•</span>
+<span class="truncate">hana.kebede@aau.med.et</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">AAU School of Public Health</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Epidemiology &amp; Biostats</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm font-bold text-secondary">
+                    3.95 / 4.00
+                  </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Summa Cum Laude</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">TOEFL: 114</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-full bg-secondary-container/20 text-on-secondary-container font-label-sm text-label-sm font-semibold">
+                  8 Matched
+                </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Wellcome, Gates</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-container/20 text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+                Registrar Confirmed
+              </span>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 text-secondary font-label-md text-label-md font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Active
+              </span>
+</td>
+<td class="py-4 pr-5 pl-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm hover:text-on-surface hover:bg-surface-container-high transition-colors font-medium">
+                  View
+                </button>
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Bereket Yohannes -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-4 pl-5 pr-2">
+<input class="rounded text-primary focus:ring-0 cursor-pointer accent-primary" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-surface-container-high text-on-surface font-headline-sm font-semibold text-[13px] flex items-center justify-center flex-shrink-0">
+                  BY
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg font-bold text-on-surface truncate">Bereket Yohannes</span>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="font-mono">#EDL-STU-5541</span>
+<span>•</span>
+<span class="truncate">bereket.y@ju.edu.et</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">Jimma University</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Civil &amp; Environmental Eng</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm font-bold text-on-surface">
+                    3.78 / 4.00
+                  </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">DE: 1.4</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">IELTS: 7.5</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">
+                  2 Saved
+                </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">DAAD Hydro</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-container/20 text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                Verified Dossier
+              </span>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 text-secondary font-label-md text-label-md font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Active
+              </span>
+</td>
+<td class="py-4 pr-5 pl-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm hover:text-on-surface hover:bg-surface-container-high transition-colors font-medium">
+                  View
+                </button>
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Blen Tessema -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-4 pl-5 pr-2">
+<input class="rounded text-primary focus:ring-0 cursor-pointer accent-primary" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-secondary-container/40 text-on-secondary-container font-headline-sm font-semibold text-[13px] flex items-center justify-center flex-shrink-0">
+                  BT
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg font-bold text-on-surface truncate">Blen Tessema</span>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="font-mono">#EDL-STU-9943</span>
+<span>•</span>
+<span class="truncate">blen.t@aau.edu.et</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">Addis Ababa University</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Biomechanical Eng • Senior</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm font-bold text-secondary">
+                    3.88 / 4.00
+                  </span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary">IELTS awaiting TRF verification</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-full bg-secondary-container/20 text-on-secondary-container font-label-sm text-label-sm font-semibold">
+                  4 High Match
+                </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ETH Zurich, Chalmers</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">hourglass_top</span>
+                Pending (IELTS TRF)
+              </span>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 text-secondary font-label-md text-label-md font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Active
+              </span>
+</td>
+<td class="py-4 pr-5 pl-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2.5 py-1 rounded bg-surface-container text-primary font-label-sm text-label-sm hover:bg-surface-container-high transition-colors font-medium">
+                  Review
+                </button>
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 6: Dawit Mengistu -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-4 pl-5 pr-2">
+<input class="rounded text-primary focus:ring-0 cursor-pointer accent-primary" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-tertiary-container text-on-tertiary-container font-headline-sm font-semibold text-[13px] flex items-center justify-center flex-shrink-0">
+                  DM
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg font-bold text-on-surface truncate">Dawit Mengistu</span>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="font-mono">#EDL-STU-9102</span>
+<span>•</span>
+<span class="truncate">dawit.m@hu.edu.et</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">Hawassa University</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Agronomy &amp; Data Systems</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm font-bold text-on-surface">
+                    3.65 / 4.00
+                  </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">DE: 1.7</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Duolingo: 135</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">
+                  1 Saved
+                </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Wageningen Agri</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-container/20 text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                Verified Dossier
+              </span>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 text-secondary font-label-md text-label-md font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Active
+              </span>
+</td>
+<td class="py-4 pr-5 pl-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm hover:text-on-surface hover:bg-surface-container-high transition-colors font-medium">
+                  View
+                </button>
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 7: Yonas Alemu (Action Required) -->
+<tr class="hover:bg-error-container/10 transition-colors group bg-error-container/5">
+<td class="py-4 pl-5 pr-2">
+<input class="rounded text-primary focus:ring-0 cursor-pointer accent-primary" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-error-container text-error font-headline-sm font-semibold text-[13px] flex items-center justify-center flex-shrink-0">
+                  YA
+                </div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg font-bold text-on-surface truncate">Yonas Alemu</span>
+<span class="material-symbols-outlined text-[16px] text-error">warning</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="font-mono">#EDL-STU-3329</span>
+<span>•</span>
+<span class="truncate">yonas.a@bdu.edu.et</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">Bahir Dar University</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Applied Mathematics</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-error-container/50 font-label-sm text-label-sm font-bold text-error">
+                    3.70 / 4.00 (Conflict)
+                  </span>
+</div>
+<span class="font-label-sm text-label-sm text-error">Transcript reads 3.42 GPA</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">
+                  0 Active
+                </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Locked until clarified</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-1">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-error-container text-error font-label-sm text-label-sm font-bold w-max">
+<span class="material-symbols-outlined text-[14px]">flag</span>
+                  Audit Required
+                </span>
+<span class="font-label-sm text-label-sm text-error">GPA Scale mismatch</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 text-tertiary font-label-md text-label-md font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                Under Review
+              </span>
+</td>
+<td class="py-4 pr-5 pl-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2.5 py-1 rounded bg-error text-on-error font-label-sm text-label-sm hover:opacity-90 transition-opacity font-medium">
+                  Resolve
+                </button>
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 8: Meron Haile -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group">
+<td class="py-4 pl-5 pr-2">
+<input class="rounded text-primary focus:ring-0 cursor-pointer accent-primary" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-on-primary font-headline-sm font-semibold text-[13px] flex-shrink-0">
+                  MH
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg font-bold text-on-surface truncate">Meron Haile</span>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="font-mono">#EDL-STU-4418</span>
+<span>•</span>
+<span class="truncate">meron.h@mu.edu.et</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">Mekelle University</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Electrical &amp; Computer Eng</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm font-bold text-on-surface">
+                    3.82 / 4.00
+                  </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">DE: 1.3</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">TOEFL: 108</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-full bg-secondary-container/20 text-on-secondary-container font-label-sm text-label-sm font-semibold">
+                  6 Matched
+                </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">KAIST, Fulbright</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-container/20 text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+                Verified Dossier
+              </span>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 text-secondary font-label-md text-label-md font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Active
+              </span>
+</td>
+<td class="py-4 pr-5 pl-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm hover:text-on-surface hover:bg-surface-container-high transition-colors font-medium">
+                  View
+                </button>
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer & Pagination Controls -->
+<div class="p-4 bg-surface-container-low/60 flex flex-wrap items-center justify-between gap-4">
+<div class="flex items-center gap-4 text-on-surface-variant font-body-sm text-body-sm">
+<span>Showing <strong class="text-on-surface font-semibold">1 to 8</strong> of <strong class="text-on-surface font-semibold">24,850</strong> registered scholars</span>
+<span class="text-outline-variant">•</span>
+<div class="flex items-center gap-2">
+<span>Rows per page:</span>
+<select class="rounded bg-surface-container-lowest px-2 py-1 font-label-md text-label-md text-on-surface focus:outline-none cursor-pointer">
+<option>8</option>
+<option>15</option>
+<option>25</option>
+<option>50</option>
+</select>
+</div>
+</div>
+<!-- Pagination Buttons -->
+<div class="flex items-center gap-1">
+<button class="p-1.5 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container disabled:opacity-40 transition-colors" disabled="">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-medium">1</button>
+<button class="w-8 h-8 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-md text-label-md transition-colors">2</button>
+<button class="w-8 h-8 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-md text-label-md transition-colors">3</button>
+<span class="px-1 text-on-surface-variant font-label-md">...</span>
+<button class="w-8 h-8 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-md text-label-md transition-colors">3,107</button>
+<button class="p-1.5 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Bottom Academic Registrar Integration Status Bar -->
+<div class="mt-8 p-5 rounded-2xl bg-surface-container-lowest shadow-[0_1px_3px_rgba(31,58,48,0.04)] flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">hub</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Institutional Student Information System (ISIS / HERQA) Bridge</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Connected to 6 Ethiopian Federal University registrar databases via SHA-256 encrypted credential pipelines.</span>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-2 text-secondary font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>All 6 Registrar Endpoints Online</span>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors">
+        Audit Registry Logs
+      </button>
+</div>
+</div>
+</div></main></div></body></html>

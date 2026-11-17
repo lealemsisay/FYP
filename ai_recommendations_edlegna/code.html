@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"tertiary-fixed-dim":"#e9c349","primary-container":"#1f3a30","secondary":"#006b5f","inverse-primary":"#afcdbf","surface-variant":"#d9e3f6","surface-container":"#e6eeff","background":"#f8f9ff","on-secondary-fixed-variant":"#005048","secondary-fixed-dim":"#4fdbc8","surface":"#f8f9ff","secondary-fixed":"#71f8e4","on-primary":"#ffffff","on-secondary":"#ffffff","surface-container-high":"#dee9fc","on-surface-variant":"#424845","on-primary-fixed":"#042017","primary-fixed-dim":"#afcdbf","error":"#ba1a1a","outline":"#727975","on-tertiary-fixed":"#241a00","surface-bright":"#f8f9ff","secondary-container":"#6df5e1","on-primary-container":"#87a497","outline-variant":"#c1c8c3","surface-container-highest":"#d9e3f6","on-primary-fixed-variant":"#314c42","surface-tint":"#486459","error-container":"#ffdad6","surface-container-lowest":"#ffffff","tertiary-fixed":"#ffe088","inverse-surface":"#27313f","on-background":"#121c2a","on-error":"#ffffff","surface-dim":"#d0dbed","on-tertiary-container":"#4e3d00","primary":"#08241b","on-error-container":"#93000a","tertiary":"#735c00","primary-fixed":"#cbeadb","on-surface":"#121c2a","surface-container-low":"#eff4ff","on-tertiary-fixed-variant":"#574500","tertiary-container":"#cba72f","on-secondary-container":"#006f64","on-tertiary":"#ffffff","inverse-on-surface":"#eaf1ff","on-secondary-fixed":"#00201c"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xl":"2.5rem","space-lg":"1.5rem","gutter":"1.5rem","margin":"1rem","space-sm":"0.5rem","gutter-desktop":"2rem","margin-desktop":"3.5rem","margin-tablet":"2rem","space-xs":"0.25rem","space-md":"1rem"},"fontFamily":{"headline-xl-mobile":["EB Garamond"],"label-md":["DM Sans"],"label-lg":["DM Sans"],"headline-md":["EB Garamond"],"body-md":["DM Sans"],"display-lg-mobile":["EB Garamond"],"display-lg":["EB Garamond"],"headline-sm":["EB Garamond"],"headline-xl":["EB Garamond"],"headline-lg":["EB Garamond"],"body-lg":["DM Sans"],"label-sm":["DM Sans"],"body-sm":["DM Sans"]},"fontSize":{"headline-xl-mobile":["2rem",{"lineHeight":"2.5rem","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.03em","fontWeight":"500"}],"label-lg":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0.02em","fontWeight":"500"}],"headline-md":["1.5rem",{"lineHeight":"2rem","fontWeight":"600"}],"body-md":["1rem",{"lineHeight":"1.5rem","fontWeight":"400"}],"display-lg-mobile":["2.5rem",{"lineHeight":"3rem","letterSpacing":"-0.015em","fontWeight":"600"}],"display-lg":["3.5rem",{"lineHeight":"4rem","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-sm":["1.25rem",{"lineHeight":"1.75rem","fontWeight":"600"}],"headline-xl":["2.5rem",{"lineHeight":"3rem","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-lg":["2rem",{"lineHeight":"2.5rem","fontWeight":"500"}],"body-lg":["1.125rem",{"lineHeight":"1.75rem","fontWeight":"400"}],"label-sm":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.05em","fontWeight":"700"}],"body-sm":["0.875rem",{"lineHeight":"1.25rem","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(31,58,48,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="h-20 px-space-lg flex items-center gap-space-sm"><img alt="Edlegna Official Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrBU_YJRUkq_IOaMvZWggJrddQlUyW__D7oZkYGwhOcOiDf2a5upcDEOJgzBoVTBOq15IrQInlfQ0LXsYOQQgpZ_93xZAQfyfQ9sbAd6_ms74gYYLXhkhMR8Ix4naHm8W1q5HHD2H8HCQHolG8rxNiT5Q0M1mB_G9p0_NWeRWHC7vfEhdk8OJsHoSJb5iuWSA3Wdv3YSonc-qBy1RPpbu-fwUHxiOeCXtySiaz6GCFQw"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight">Edlegna</span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Scholar Portal</span></div></div><div class="px-space-md py-space-sm"><span class="px-space-md font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Discovery Suite</span></div><nav class="flex flex-col gap-space-xs px-space-md" data-active-classes="bg-primary-container text-on-primary font-bold"><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="dashboard" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-xl">space_dashboard</span><span>Dashboard</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="discover-scholarships" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-xl">travel_explore</span><span>Discover Scholarships</span></div></a><a aria-current="page" class="flex items-center justify-between px-space-md py-space-sm rounded-lg transition-all bg-primary-container text-on-primary font-bold" data-path="ai-recommendations" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-xl text-secondary">auto_awesome</span><span>AI Recommendations</span></div><span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-space-xs py-0.5 rounded-full font-bold">12</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="eligibility-checker" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-xl">rule_folder</span><span>Eligibility Checker</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="saved-scholarships" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-xl">bookmark</span><span>Saved Scholarships</span></div><span class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-space-xs py-0.5 rounded-full">8</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="search-history" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-xl">history_edu</span><span>Search History</span></div></a></nav><div class="px-space-md pt-space-lg pb-space-sm"><span class="px-space-md font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Personal Dossier</span></div><nav class="flex flex-col gap-space-xs px-space-md" data-active-classes="bg-primary-container text-on-primary font-bold"><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="my-profile" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-xl">account_circle</span><span>My Profile</span></div><span class="text-tertiary font-label-sm text-label-sm font-bold">94%</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="notifications" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-xl">notifications</span><span>Notifications</span></div><span class="bg-error text-on-error font-label-sm text-label-sm px-space-xs py-0.5 rounded-full font-bold">3</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="settings" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-xl">settings</span><span>Settings</span></div></a></nav></div><div class="p-space-md bg-surface-container-low/60 m-space-md rounded-lg flex items-center gap-space-md"><img alt="Profile" class="w-10 h-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpdcdYuqyrb_ZMzNePg0SIMiVbRJLFZf9IsINb3g755YkRU991jpUVB3jWhUt9_WG-TQ-RLzJGAUI5oNEiTja_75fT1MSXaE2doRSeEJhixb_-9o5dbJ0mqaZRKWrD2lieG0JfIbWLkd0dajglKt8ALMppVyJngOq1Nz5-AEf6bIPVnwU1WIY7uCeMgthnv16Pug-YvoQF4Z54xqKkOOOwNAA_ACZRsAO2IsXST3g"/><div class="flex flex-col min-w-0 flex-1"><span class="font-label-lg text-label-lg font-bold text-on-surface truncate">Julian Vance</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Stanford Fellow '26</span></div><a class="text-on-surface-variant hover:text-error transition-colors" data-path="sign-in" href="#" title="Sign Out"><span class="material-symbols-outlined text-lg">logout</span></a></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(31,58,48,0.04)] z-40 flex items-center justify-between px-space-lg lg:px-margin-desktop"><div class="flex items-center gap-space-md"><img alt="Edlegna Official Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrBU_YJRUkq_IOaMvZWggJrddQlUyW__D7oZkYGwhOcOiDf2a5upcDEOJgzBoVTBOq15IrQInlfQ0LXsYOQQgpZ_93xZAQfyfQ9sbAd6_ms74gYYLXhkhMR8Ix4naHm8W1q5HHD2H8HCQHolG8rxNiT5Q0M1mB_G9p0_NWeRWHC7vfEhdk8OJsHoSJb5iuWSA3Wdv3YSonc-qBy1RPpbu-fwUHxiOeCXtySiaz6GCFQw"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-semibold hidden md:inline-block">Edlegna Academic Portfolio</span></div><div class="flex items-center gap-space-lg"><div class="relative hidden sm:block w-72"><span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-on-surface-variant text-lg">search</span><input class="w-full pl-10 pr-space-md py-space-xs bg-surface-container-lowest text-on-surface font-body-sm text-body-sm rounded-lg outline-none ring-1 ring-outline-variant focus:ring-primary" placeholder="Search grants, donors, fields..." type="text"/></div><a class="relative p-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-2xl">notifications</span><span class="absolute top-1 right-1 w-2.5 h-2.5 bg-error rounded-full"></span></a><div class="flex items-center gap-space-sm pl-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpdcdYuqyrb_ZMzNePg0SIMiVbRJLFZf9IsINb3g755YkRU991jpUVB3jWhUt9_WG-TQ-RLzJGAUI5oNEiTja_75fT1MSXaE2doRSeEJhixb_-9o5dbJ0mqaZRKWrD2lieG0JfIbWLkd0dajglKt8ALMppVyJngOq1Nz5-AEf6bIPVnwU1WIY7uCeMgthnv16Pug-YvoQF4Z54xqKkOOOwNAA_ACZRsAO2IsXST3g"/><span class="font-label-md text-label-md font-bold text-on-surface hidden lg:inline">J. Vance</span></div></div></header><main class="relative pt-20 bg-surface min-h-screen px-space-md lg:px-space-xl py-space-lg"><div class="flex flex-col w-full">
+<!-- Top Dossier Breadcrumb & Academic Status Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-md pb-space-md">
+<div class="flex items-center gap-space-sm text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-base">architecture</span>
+<span>Dossier Index</span>
+<span class="text-outline-variant">/</span>
+<span class="text-primary font-bold">Algorithmic Match Studio</span>
+<span class="px-space-xs py-0.5 rounded-full bg-secondary/10 text-secondary font-label-sm text-label-sm font-semibold uppercase tracking-wider">Engine v4.2</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-1.5 px-space-md py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+        Neural Match Active
+      </span>
+<button class="flex items-center gap-1.5 px-space-md py-1 rounded-lg bg-surface-container-lowest text-on-surface shadow-sm hover:bg-surface-container transition-colors font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-base">tune</span>
+        Adjust Model Weights
+      </button>
+</div>
+</div>
+<!-- Primary Headline Banner & Institutional Context -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm p-space-lg lg:p-space-xl">
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-secondary/5 blur-3xl pointer-events-none"></div>
+<div class="absolute right-32 -bottom-20 w-64 h-64 rounded-full bg-tertiary/5 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base text-secondary">psychology</span>
+            Vector Embedding Analysis
+          </span>
+<h1 class="font-headline-xl text-headline-xl text-primary font-bold tracking-tight mt-1">
+            AI-Powered Scholarship Recommendations
+          </h1>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-space-sm rounded-lg">
+<span class="font-display-lg text-headline-lg text-primary font-bold leading-none">14</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Programs Identified</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Ranked by Semantic Fit</span>
+</div>
+</div>
+</div>
+<!-- Natural Language Query Prompt Banner -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md p-space-md rounded-lg bg-surface-container-low text-on-surface">
+<div class="flex items-start gap-space-sm min-w-0">
+<div class="p-2 rounded-lg bg-surface-container-lowest text-secondary shadow-sm">
+<span class="material-symbols-outlined text-xl">manage_search</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Active Search Ingestion</span>
+<p class="font-body-md text-body-md text-primary font-medium italic truncate">
+              “Fully funded master scholarships in AI/Machine Learning with living stipend”
+            </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Recalculated 8m ago</span>
+<button class="p-1.5 rounded-lg text-secondary hover:bg-surface-container-high transition-colors" title="Refresh Inference">
+<span class="material-symbols-outlined text-lg">sync</span>
+</button>
+</div>
+</div>
+<!-- Profile Reference Capsule -->
+<div class="p-space-md rounded-lg bg-primary text-on-primary shadow-sm flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary-fixed text-xl">school</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-inverse-primary uppercase tracking-widest font-semibold">Matched Candidate Dossier</span>
+<span class="font-body-md text-body-md font-medium text-on-primary">
+              Julian Vance — B.Sc. Computer Science (CGPA: 3.86/4.0), Addis Ababa University
+            </span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm text-primary-fixed font-label-md text-label-md">
+<span class="px-space-sm py-1 rounded bg-primary-container">Target: MSc AI / Data Science</span>
+<span class="px-space-sm py-1 rounded bg-primary-container">Regions: Europe, North America</span>
+<span class="px-space-sm py-1 rounded bg-primary-container">Language: English (C1)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Mandatory Architectural Disclaimer: Semantic vs Eligibility Separation -->
+<div class="mt-space-lg p-space-md rounded-xl bg-tertiary-fixed/30 text-on-tertiary-fixed flex items-start gap-space-md">
+<span class="material-symbols-outlined text-tertiary text-2xl shrink-0 mt-0.5">policy</span>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-lg text-label-lg font-bold text-on-tertiary-fixed">Critical Verification Principle</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider px-2 py-0.5 rounded bg-tertiary text-on-tertiary font-bold">Engine Governance</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-tertiary-fixed-variant mt-0.5">
+        Semantic relevance indicates strong contextual alignment with your research interests, coursework, and career narrative. <strong>A high relevance score does not constitute legal eligibility confirmation.</strong> Always scrutinize the independent deterministic rule-check status before application submission.
+      </p>
+</div>
+</div>
+<!-- Filter & Visualization Sub-Toolbar -->
+<div class="mt-space-lg flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 sm:pb-0">
+<button class="px-space-md py-1.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-bold shrink-0">
+        All Recommendations (14)
+      </button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-colors font-label-sm text-label-sm shrink-0">
+        Fully Eligible Only (9)
+      </button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-colors font-label-sm text-label-sm shrink-0">
+        Requires Documents (4)
+      </button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-colors font-label-sm text-label-sm shrink-0">
+        Europe Only (11)
+      </button>
+</div>
+<div class="flex items-center gap-space-sm self-end sm:self-auto font-label-sm text-label-sm text-on-surface-variant">
+<span>Sort by:</span>
+<select class="bg-surface-container-lowest text-primary font-semibold py-1 px-space-sm rounded-lg outline-none cursor-pointer">
+<option>Semantic Similarity (High to Low)</option>
+<option>Eligibility Fulfillment Count</option>
+<option>Application Deadline (Nearest)</option>
+<option>Award Funding Value</option>
+</select>
+</div>
+</div>
+<!-- Recommendations List -->
+<div class="mt-space-lg flex flex-col gap-space-lg">
+<!-- CARD 1: DAAD Helmut-Schmidt (96% Match, Fully Satisfied) -->
+<div class="group relative rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-300 p-space-lg lg:p-space-xl flex flex-col gap-space-lg overflow-hidden">
+<div class="flex flex-col lg:flex-row lg:items-start justify-between gap-space-md">
+<!-- University & Title Info -->
+<div class="flex items-start gap-space-md min-w-0">
+<div class="w-14 h-14 rounded-xl bg-surface-container-low flex items-center justify-center shrink-0 shadow-sm">
+<span class="font-headline-md text-headline-md text-primary font-bold">🇩🇪</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-space-xs mb-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Federal Ministry of Foreign Affairs</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Germany</span>
+<span class="text-outline-variant">•</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface">M.Sc. Postgraduate</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold tracking-tight hover:text-secondary transition-colors cursor-pointer">
+              DAAD Helmut-Schmidt Program in Public Policy &amp; Data Governance
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Administered across German Master Consortia (including TU Munich &amp; University of Passau)
+            </p>
+</div>
+</div>
+<!-- DUAL SEPARATED PILLS: SEMANTIC RELEVANCE VS ELIGIBILITY -->
+<div class="flex flex-row lg:flex-col items-end gap-space-sm shrink-0">
+<!-- 1. AI Semantic Relevance Pill -->
+<div class="flex items-center gap-1.5 px-space-md py-1.5 rounded-full bg-secondary-fixed/40 text-on-secondary-fixed shadow-[0_0_16px_-2px_rgba(0,107,95,0.25)]">
+<span class="material-symbols-outlined text-secondary text-base">auto_awesome</span>
+<span class="font-label-md text-label-md font-bold tracking-tight text-secondary">96% Semantic Fit</span>
+</div>
+<!-- 2. Deterministic Eligibility Status Pill -->
+<div class="flex items-center gap-1.5 px-space-md py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed">
+<span class="material-symbols-outlined text-primary text-base">verified</span>
+<span class="font-label-sm text-label-sm font-bold">Status: Fully Satisfied (5/5 met)</span>
+</div>
+</div>
+</div>
+<!-- Why We Recommended This (Expandable Box) -->
+<div class="rounded-xl bg-surface-container-low p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base text-secondary">insights</span>
+            Algorithmic Reasoning Summary
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Validated against verified transcript</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-space-lg gap-y-space-xs pt-space-xs">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base mt-0.5 shrink-0">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Direct match with your undergraduate major in <strong>Computer Science</strong> and academic focus in <strong>Machine Learning</strong>.</span>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base mt-0.5 shrink-0">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Target study destination matches your designated preferred European region (<strong>Germany / DAAD network</strong>).</span>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base mt-0.5 shrink-0">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Academic threshold (minimum 3.0 CGPA) is comfortably fulfilled by your verified <strong>3.86 CGPA</strong>.</span>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base mt-0.5 shrink-0">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Fully accounts for preferred financial profile: incorporates living allowance of <strong>€934/month</strong> plus travel grants.</span>
+</div>
+</div>
+</div>
+<!-- Key Details & Primary Actions Row -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md pt-space-xs">
+<div class="grid grid-cols-3 gap-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Financial Award</span>
+<span class="font-label-lg text-label-lg font-bold text-primary">Full Tuition + €934/mo</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Tenure</span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">24 Months</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Deadline</span>
+<span class="font-label-lg text-label-lg font-bold text-error">Dec 15, 2025</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="p-2.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface transition-colors" title="Save to Dossier">
+<span class="material-symbols-outlined text-xl">bookmark_add</span>
+</button>
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container-high text-primary font-label-md text-label-md font-bold hover:bg-surface-container-highest transition-colors">
+            Check Full Eligibility Breakdown
+          </button>
+<button class="px-space-lg py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-bold shadow-sm hover:bg-primary-container transition-colors flex items-center gap-1.5">
+<span>View Official Dossier</span>
+<span class="material-symbols-outlined text-base">north_east</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CARD 2: Erasmus Mundus AI4Health (92% Match, Fully Satisfied) -->
+<div class="group relative rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-300 p-space-lg lg:p-space-xl flex flex-col gap-space-lg overflow-hidden">
+<div class="flex flex-col lg:flex-row lg:items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="w-14 h-14 rounded-xl bg-surface-container-low flex items-center justify-center shrink-0 shadow-sm">
+<span class="font-headline-md text-headline-md text-primary font-bold">🇪🇺</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-space-xs mb-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">European Commission Consortium</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">France / Sweden / Italy</span>
+<span class="text-outline-variant">•</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface">Joint M.Sc. Degree</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold tracking-tight hover:text-secondary transition-colors cursor-pointer">
+              Erasmus Mundus AI4Health: Joint European Master in Health Informatics &amp; Machine Learning
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Consortium: Karolinska Institutet, Univ. of Milan, Paris-Saclay University
+            </p>
+</div>
+</div>
+<div class="flex flex-row lg:flex-col items-end gap-space-sm shrink-0">
+<div class="flex items-center gap-1.5 px-space-md py-1.5 rounded-full bg-secondary-fixed/40 text-on-secondary-fixed shadow-[0_0_16px_-2px_rgba(0,107,95,0.25)]">
+<span class="material-symbols-outlined text-secondary text-base">auto_awesome</span>
+<span class="font-label-md text-label-md font-bold tracking-tight text-secondary">92% Semantic Fit</span>
+</div>
+<div class="flex items-center gap-1.5 px-space-md py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed">
+<span class="material-symbols-outlined text-primary text-base">verified</span>
+<span class="font-label-sm text-label-sm font-bold">Status: Fully Satisfied (6/6 met)</span>
+</div>
+</div>
+</div>
+<div class="rounded-xl bg-surface-container-low p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base text-secondary">insights</span>
+            Algorithmic Reasoning Summary
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Validated against verified transcript</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-space-lg gap-y-space-xs pt-space-xs">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base mt-0.5 shrink-0">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Undergraduate curriculum provides prerequisite 30 ECTS in applied mathematics, linear algebra, and algorithmic Python.</span>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base mt-0.5 shrink-0">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Supports multi-destination mobility requirement across top tier European research institutes.</span>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base mt-0.5 shrink-0">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Institutional ranking alignment matches top 5% candidate threshold of your graduating university.</span>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base mt-0.5 shrink-0">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Includes full €1,400 monthly allowance, full international health insurance, and institutional fee waivers.</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md pt-space-xs">
+<div class="grid grid-cols-3 gap-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Financial Award</span>
+<span class="font-label-lg text-label-lg font-bold text-primary">Full Tuition + €1,400/mo</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Tenure</span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">24 Months</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Deadline</span>
+<span class="font-label-lg text-label-lg font-bold text-error">Jan 18, 2026</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="p-2.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface transition-colors" title="Save to Dossier">
+<span class="material-symbols-outlined text-xl">bookmark_add</span>
+</button>
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container-high text-primary font-label-md text-label-md font-bold hover:bg-surface-container-highest transition-colors">
+            Check Full Eligibility Breakdown
+          </button>
+<button class="px-space-lg py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-bold shadow-sm hover:bg-primary-container transition-colors flex items-center gap-1.5">
+<span>View Official Dossier</span>
+<span class="material-symbols-outlined text-base">north_east</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CARD 3: Chevening UK (88% Match, Missing Info: IELTS Academic) -->
+<div class="group relative rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-300 p-space-lg lg:p-space-xl flex flex-col gap-space-lg overflow-hidden">
+<div class="flex flex-col lg:flex-row lg:items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="w-14 h-14 rounded-xl bg-surface-container-low flex items-center justify-center shrink-0 shadow-sm">
+<span class="font-headline-md text-headline-md text-primary font-bold">🇬🇧</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-space-xs mb-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">UK Foreign, Commonwealth &amp; Development Office</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">United Kingdom</span>
+<span class="text-outline-variant">•</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface">1-Year Master (MSc)</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold tracking-tight hover:text-secondary transition-colors cursor-pointer">
+              Chevening Fellowship &amp; Postgraduate Leadership Scholarship
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Tenure at eligible UK Universities (e.g. Oxford, Imperial College London, UCL, Edinburgh)
+            </p>
+</div>
+</div>
+<!-- DUAL SEPARATED PILLS: High Semantic Match vs Review Missing Info -->
+<div class="flex flex-row lg:flex-col items-end gap-space-sm shrink-0">
+<div class="flex items-center gap-1.5 px-space-md py-1.5 rounded-full bg-secondary-fixed/40 text-on-secondary-fixed shadow-[0_0_16px_-2px_rgba(0,107,95,0.25)]">
+<span class="material-symbols-outlined text-secondary text-base">auto_awesome</span>
+<span class="font-label-md text-label-md font-bold tracking-tight text-secondary">88% Semantic Fit</span>
+</div>
+<!-- GOLD PILL FOR MISSING/UNCONFIRMED INFORMATION -->
+<div class="flex items-center gap-1.5 px-space-md py-1.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-tertiary text-base">warning</span>
+<span class="font-label-sm text-label-sm font-bold">Status: Review Missing Info (1 unconfirmed)</span>
+</div>
+</div>
+</div>
+<!-- Notification Drawer for Missing Information -->
+<div class="rounded-lg bg-surface-container-high/60 p-space-sm flex items-center justify-between text-on-surface font-body-sm text-body-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-xl">assignment_late</span>
+<span><strong>Action Required:</strong> Chevening requires official <em>IELTS Academic</em> or <em>PTE Academic</em> test score certificate. Self-declared C1 level is insufficient.</span>
+</div>
+<button class="px-space-md py-1 rounded bg-surface-container-lowest text-primary hover:bg-surface-container text-label-sm font-bold shadow-sm shrink-0">
+          Upload Scorecard
+        </button>
+</div>
+<div class="rounded-xl bg-surface-container-low p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base text-secondary">insights</span>
+            Algorithmic Reasoning Summary
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Validated against verified transcript</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-space-lg gap-y-space-xs pt-space-xs">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base mt-0.5 shrink-0">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Matches candidate's documented AI research leadership experience in natural language processing.</span>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base mt-0.5 shrink-0">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Substantial career trajectory fits Chevening's global leadership and alumni ambassadorship profile.</span>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-base mt-0.5 shrink-0">help</span>
+<span class="font-body-sm text-body-sm text-on-surface">Work experience verification indicates 2,100 hours logged (requires minimum 2,800 hours before application window closes).</span>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base mt-0.5 shrink-0">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Fully covers economy international airfare, full university tuition fees, and London-indexed living stipends.</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md pt-space-xs">
+<div class="grid grid-cols-3 gap-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Financial Award</span>
+<span class="font-label-lg text-label-lg font-bold text-primary">Full Tuition + Stipend</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Tenure</span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">12 Months</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Deadline</span>
+<span class="font-label-lg text-label-lg font-bold text-error">Nov 04, 2025</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="p-2.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface transition-colors" title="Save to Dossier">
+<span class="material-symbols-outlined text-xl">bookmark_add</span>
+</button>
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container-high text-primary font-label-md text-label-md font-bold hover:bg-surface-container-highest transition-colors">
+            Resolve Missing Information
+          </button>
+<button class="px-space-lg py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-bold shadow-sm hover:bg-primary-container transition-colors flex items-center gap-1.5">
+<span>View Official Dossier</span>
+<span class="material-symbols-outlined text-base">north_east</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CARD 4: ETH Zurich Excellence Scholarship (84% Match, Partial Tuition / Merit) -->
+<div class="group relative rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-300 p-space-lg lg:p-space-xl flex flex-col gap-space-lg overflow-hidden">
+<div class="flex flex-col lg:flex-row lg:items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="w-14 h-14 rounded-xl bg-surface-container-low flex items-center justify-center shrink-0 shadow-sm">
+<span class="font-headline-md text-headline-md text-primary font-bold">🇨🇭</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-space-xs mb-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">ETH Zurich Foundation</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Switzerland</span>
+<span class="text-outline-variant">•</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface">M.Sc. Computer Science / Robotics</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold tracking-tight hover:text-secondary transition-colors cursor-pointer">
+              ETH Zurich Excellence Scholarship &amp; Opportunity Programme (ESOP)
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Department of Computer Science (D-INFK) • Swiss Federal Institute of Technology
+            </p>
+</div>
+</div>
+<div class="flex flex-row lg:flex-col items-end gap-space-sm shrink-0">
+<div class="flex items-center gap-1.5 px-space-md py-1.5 rounded-full bg-secondary-fixed/40 text-on-secondary-fixed shadow-[0_0_16px_-2px_rgba(0,107,95,0.25)]">
+<span class="material-symbols-outlined text-secondary text-base">auto_awesome</span>
+<span class="font-label-md text-label-md font-bold tracking-tight text-secondary">84% Semantic Fit</span>
+</div>
+<!-- Forest Green Pill for criteria fulfilled, with note of partial structure -->
+<div class="flex items-center gap-1.5 px-space-md py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed">
+<span class="material-symbols-outlined text-primary text-base">verified</span>
+<span class="font-label-sm text-label-sm font-bold">Status: Satisfied (Grade A / Top 10%)</span>
+</div>
+</div>
+</div>
+<div class="rounded-xl bg-surface-container-low p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base text-secondary">insights</span>
+            Algorithmic Reasoning Summary
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Validated against verified transcript</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-space-lg gap-y-space-xs pt-space-xs">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base mt-0.5 shrink-0">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Curricular alignment matches ETH Zurich's intensive core requirements in Machine Perception and Deep Learning.</span>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base mt-0.5 shrink-0">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Requires top 10% class standing; confirmed by your official Dean's Certificate (Rank 2 of 140).</span>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-on-surface-variant text-base mt-0.5 shrink-0">info</span>
+<span class="font-body-sm text-body-sm text-on-surface">Award format provides CHF 12,000 per semester plus tuition waiver, requiring supplemental personal budgeting.</span>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base mt-0.5 shrink-0">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Requires a Master Thesis pre-proposal: your submitted abstract in graph neural networks fits D-INFK faculty themes.</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md pt-space-xs">
+<div class="grid grid-cols-3 gap-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Financial Award</span>
+<span class="font-label-lg text-label-lg font-bold text-primary">Tuition Waiver + CHF 24k/yr</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Tenure</span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">24 Months</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Deadline</span>
+<span class="font-label-lg text-label-lg font-bold text-error">Dec 01, 2025</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="p-2.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface transition-colors" title="Save to Dossier">
+<span class="material-symbols-outlined text-xl">bookmark_add</span>
+</button>
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container-high text-primary font-label-md text-label-md font-bold hover:bg-surface-container-highest transition-colors">
+            Check Full Eligibility Breakdown
+          </button>
+<button class="px-space-lg py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-bold shadow-sm hover:bg-primary-container transition-colors flex items-center gap-1.5">
+<span>View Official Dossier</span>
+<span class="material-symbols-outlined text-base">north_east</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Editorial Secondary Section: Algorithmic Verification Breakdown -->
+<div class="mt-space-xl grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<!-- Visual Diagnostic 1: Semantic Fit Distribution -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm uppercase tracking-widest font-bold">
+<span class="material-symbols-outlined text-base">scatter_plot</span>
+<span>Vector Similarity Index</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold mt-1">Field Embeddings</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+          Your profile exhibits highest alignment with Machine Intelligence, Algorithmic Ethics, and High-Performance Compute grants.
+        </p>
+</div>
+<!-- Inline SVG Diagnostic Visualization -->
+<div class="mt-space-md pt-space-md bg-surface-container-low rounded-lg p-space-md">
+<svg class="w-full h-24 overflow-visible" preserveaspectratio="none" viewbox="0 0 300 100">
+<!-- Background Axis -->
+<line class="text-outline-variant" stroke="currentColor" stroke-width="1" x1="20" x2="280" y1="80" y2="80"></line>
+<line class="text-outline-variant" stroke="currentColor" stroke-width="1" x1="20" x2="20" y1="20" y2="80"></line>
+<!-- Spline representation of relevance -->
+<path class="text-secondary" d="M 20 70 Q 70 65, 110 40 T 190 25 T 280 15" fill="none" stroke="currentColor" stroke-width="2.5"></path>
+<!-- Points -->
+<circle class="fill-secondary" cx="110" cy="40" r="4"></circle>
+<circle class="fill-secondary" cx="190" cy="25" r="4"></circle>
+<circle class="fill-primary" cx="280" cy="15" r="5"></circle>
+<!-- Text labels -->
+<text class="text-[9px] fill-on-surface-variant font-label-sm" x="20" y="94">Foundational CS</text>
+<text class="text-[9px] fill-on-surface-variant font-label-sm" x="140" y="94">Applied Data</text>
+<text class="text-[9px] fill-primary font-bold font-label-sm" x="240" y="94">Neural/AI</text>
+</svg>
+</div>
+</div>
+<!-- Visual Diagnostic 2: Eligibility Matrix -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm uppercase tracking-widest font-bold">
+<span class="material-symbols-outlined text-base">checklist_rtl</span>
+<span>Deterministic Audit</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold mt-1">Rule Verification Stats</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+          Across the 14 matched grants, 68 of 72 total institutional rules are definitively satisfied.
+        </p>
+</div>
+<div class="mt-space-md flex flex-col gap-space-xs pt-space-md">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="font-medium text-on-surface">Academic Standing (GPA)</span>
+<span class="text-secondary font-bold">14 / 14 Compliant</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-secondary w-full"></div>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm mt-2">
+<span class="font-medium text-on-surface">Language Credentials</span>
+<span class="text-tertiary font-bold">10 / 14 Verified</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-tertiary w-3/4"></div>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm mt-2">
+<span class="font-medium text-on-surface">Target Regional Citizenship</span>
+<span class="text-secondary font-bold">14 / 14 Compliant</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-secondary w-full"></div>
+</div>
+</div>
+</div>
+<!-- Visual Diagnostic 3: AI Concierge Dispatch -->
+<div class="p-space-lg rounded-xl bg-primary text-on-primary shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -right-8 -bottom-8 w-40 h-40 bg-secondary/20 rounded-full blur-xl pointer-events-none"></div>
+<div>
+<div class="flex items-center gap-space-xs text-secondary-fixed font-label-sm text-label-sm uppercase tracking-widest font-bold">
+<span class="material-symbols-outlined text-base">auto_fix_high</span>
+<span>Edlegna Advisory</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-primary font-bold mt-1">Need Clarification?</h3>
+<p class="font-body-sm text-body-sm text-inverse-primary mt-1">
+          Let the academic concierge assemble bespoke application portfolios with tailored personal statements.
+        </p>
+</div>
+<div class="mt-space-lg flex flex-col gap-space-sm relative z-10">
+<button class="w-full py-2.5 rounded-lg bg-secondary text-on-primary font-label-md text-label-md font-bold hover:bg-secondary-fixed hover:text-on-secondary-fixed transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-lg">auto_awesome</span>
+<span>Generate Statement Strategy</span>
+</button>
+<span class="text-center font-label-sm text-label-sm text-primary-fixed-dim">Estimated computation time: ~12 seconds</span>
+</div>
+</div>
+</div>
+<!-- Pagination and Archive Navigation Footer -->
+<div class="mt-space-xl pb-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+      Showing <strong>1 – 4</strong> of <strong>14</strong> recommended scholarships for Julian Vance
+    </span>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-2 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container shadow-sm font-label-sm text-label-sm font-bold opacity-50 cursor-not-allowed">
+        Previous Set
+      </button>
+<button class="px-3 py-2 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm font-bold">
+        1
+      </button>
+<button class="px-3 py-2 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container shadow-sm font-label-sm text-label-sm font-bold">
+        2
+      </button>
+<button class="px-3 py-2 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container shadow-sm font-label-sm text-label-sm font-bold">
+        3
+      </button>
+<button class="px-space-md py-2 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container shadow-sm font-label-sm text-label-sm font-bold">
+        Next Set
+      </button>
+</div>
+</div>
+</div></main></div></body></html>

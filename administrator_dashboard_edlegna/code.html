@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-secondary-container":"#006f64","on-background":"#121c2a","secondary-container":"#6df5e1","surface":"#f8f9ff","surface-container":"#e6eeff","on-tertiary":"#ffffff","background":"#f8f9ff","inverse-on-surface":"#eaf1ff","on-tertiary-container":"#4e3d00","inverse-primary":"#afcdbf","surface-bright":"#f8f9ff","on-primary":"#ffffff","surface-variant":"#d9e3f6","on-surface-variant":"#424845","outline":"#727975","surface-dim":"#d0dbed","on-primary-fixed":"#042017","secondary-fixed-dim":"#4fdbc8","primary-container":"#1f3a30","on-secondary-fixed-variant":"#005048","surface-container-highest":"#d9e3f6","on-tertiary-fixed-variant":"#574500","on-tertiary-fixed":"#241a00","on-secondary-fixed":"#00201c","outline-variant":"#c1c8c3","error":"#ba1a1a","surface-container-low":"#eff4ff","tertiary-fixed":"#ffe088","primary":"#08241b","secondary-fixed":"#71f8e4","primary-fixed":"#cbeadb","on-primary-container":"#87a497","on-primary-fixed-variant":"#314c42","secondary":"#006b5f","tertiary-container":"#cba72f","on-secondary":"#ffffff","surface-container-lowest":"#ffffff","on-error":"#ffffff","surface-container-high":"#dee9fc","on-error-container":"#93000a","inverse-surface":"#27313f","on-surface":"#121c2a","tertiary-fixed-dim":"#e9c349","primary-fixed-dim":"#afcdbf","error-container":"#ffdad6","tertiary":"#735c00","surface-tint":"#486459"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"gutter-desktop":"2rem","space-md":"1rem","margin-desktop":"3.5rem","space-sm":"0.5rem","space-xl":"2.5rem","space-lg":"1.5rem","margin-tablet":"2rem","space-xs":"0.25rem","margin":"1rem","gutter":"1.5rem"},"fontFamily":{"headline-xl-mobile":["EB Garamond"],"label-lg":["DM Sans"],"body-lg":["DM Sans"],"headline-xl":["EB Garamond"],"body-md":["DM Sans"],"label-md":["DM Sans"],"headline-md":["EB Garamond"],"headline-sm":["EB Garamond"],"display-lg":["EB Garamond"],"headline-lg":["EB Garamond"],"label-sm":["DM Sans"],"display-lg-mobile":["EB Garamond"],"body-sm":["DM Sans"]},"fontSize":{"headline-xl-mobile":["2rem",{"lineHeight":"2.5rem","letterSpacing":"-0.01em","fontWeight":"600"}],"label-lg":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0.02em","fontWeight":"500"}],"body-lg":["1.125rem",{"lineHeight":"1.75rem","fontWeight":"400"}],"headline-xl":["2.5rem",{"lineHeight":"3rem","letterSpacing":"-0.015em","fontWeight":"600"}],"body-md":["1rem",{"lineHeight":"1.5rem","fontWeight":"400"}],"label-md":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.03em","fontWeight":"500"}],"headline-md":["1.5rem",{"lineHeight":"2rem","fontWeight":"600"}],"headline-sm":["1.25rem",{"lineHeight":"1.75rem","fontWeight":"600"}],"display-lg":["3.5rem",{"lineHeight":"4rem","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-lg":["2rem",{"lineHeight":"2.5rem","fontWeight":"500"}],"label-sm":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.05em","fontWeight":"700"}],"display-lg-mobile":["2.5rem",{"lineHeight":"3rem","letterSpacing":"-0.015em","fontWeight":"600"}],"body-sm":["0.875rem",{"lineHeight":"1.25rem","fontWeight":"400"}]}}}}</script></head><body class="bg-surface text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="px-6 py-5 flex items-center justify-between"><div class="flex items-center gap-3"><div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center text-on-primary font-headline-md text-headline-md shadow-[0_2px_8px_rgba(8,36,27,0.18)]">E</div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-tight tracking-tight">Edlegna</span><span class="font-label-sm text-label-sm text-on-surface-variant">Scholarly AI Suite</span></div></div><span class="px-2 py-0.5 rounded-full bg-tertiary-container/20 text-on-tertiary-container font-label-sm text-label-sm">ADMIN</span></div><div class="px-4 py-2"><div class="px-3 py-1.5 rounded-lg bg-surface-container-low flex items-center gap-2 text-on-surface-variant font-label-md text-label-md"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span>Engine Sync: 99.8%</span></div></div><nav class="px-3 py-3 flex flex-col gap-6" data-active-classes="bg-primary text-on-primary rounded-lg"><div class="flex flex-col gap-1"><div class="px-3 py-1 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">Core Governance</div><a aria-current="page" class="flex items-center justify-between px-3 py-2 transition-colors font-label-lg bg-primary text-on-primary rounded-lg" data-path="dashboard" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Dashboard</span></div></a><a class="flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="scholarship-management" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">folder_open</span><span>Scholarships</span></div><span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">1,420</span></a><a class="flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="add-scholarship" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">add_circle</span><span>Add Scholarship</span></div></a><a class="flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="eligibility-engine" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">tune</span><span>Eligibility Engine</span></div></a><a class="flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="categories-and-filters" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">filter_list</span><span>Categories &amp; Rules</span></div></a></div><div class="flex flex-col gap-1"><div class="px-3 py-1 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">Student &amp; Access Registry</div><a class="flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="student-management" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">group</span><span>Students</span></div><span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">24.8k</span></a><a class="flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="verification-requests" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">verified_user</span><span>Verification</span></div><span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">18 Pending</span></a></div><div class="flex flex-col gap-1"><div class="px-3 py-1 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">Intelligence &amp; Audit</div><a class="flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="search-ai-analytics" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">analytics</span><span>Search Analytics</span></div></a><a class="flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="recommendation-analytics" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">psychology</span><span>Recommendation AI</span></div></a><a class="flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="audit-and-compliance-reports" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">policy</span><span>Audit &amp; Compliance</span></div></a></div><div class="flex flex-col gap-1"><div class="px-3 py-1 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">System Configuration</div><a class="flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="administrator-notifications" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">notifications</span><span>Alerts &amp; Logs</span></div><span class="px-2 py-0.5 rounded-full bg-error text-on-error font-label-sm text-label-sm">5</span></a><a class="flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="system-settings" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">settings</span><span>System Settings</span></div></a><a class="flex items-center justify-between px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="login" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">logout</span><span>Sign Out</span></div></a></div></nav></div><div class="p-4 flex flex-col gap-3"><div class="p-3 rounded-xl bg-surface-container-low flex flex-col gap-2"><div class="flex items-center justify-between text-on-surface font-label-sm text-label-sm"><span class="font-medium">Addis-01 Cluster</span><span class="text-secondary font-semibold">Healthy</span></div><div class="w-full bg-surface-container-highest rounded-full h-1.5"><div class="bg-secondary h-1.5 rounded-full w-[42%]"></div></div><div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm"><span>Storage 42%</span><span>NVMe High-IO</span></div></div><div class="p-3 rounded-xl bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] flex items-center justify-between"><div class="flex items-center gap-3 overflow-hidden"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col truncate"><span class="font-label-md text-label-md text-on-surface font-semibold truncate">Dr. Aster Berhanu</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Superadmin</span></div></div><span class="material-symbols-outlined text-on-surface-variant text-[18px]">more_vert</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-gutter-desktop"><div class="h-16 flex items-center justify-between gap-6"><div class="flex items-center gap-4 min-w-0"><div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md"><span class="material-symbols-outlined text-[18px] text-primary">account_balance</span><span class="text-on-surface font-semibold">Edlegna Portal</span><span class="text-outline-variant">/</span><span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-mono">v4.2.1-prod</span></div></div><div class="flex-1 max-w-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">search</span><input class="w-full pl-9 pr-4 py-1.5 rounded-xl bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px_rgba(8,36,27,0.12)] transition-all" placeholder="Search scholarships, students, audit logs, rules..." type="text"/></div></div><div class="flex items-center gap-4 flex-shrink-0"><div class="hidden xl:flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-low font-label-sm text-label-sm text-on-surface"><span class="w-2 h-2 rounded-full bg-secondary-container"></span><span class="font-medium text-on-surface-variant">AI Semantic Engine Active</span></div><button class="relative p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><div class="h-6 w-px bg-surface-container-highest"></div><div class="flex items-center gap-3 pl-1"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden md:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Dr. Aster Berhanu</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Lead Administrator</span></div><span class="material-symbols-outlined text-on-surface-variant text-[18px]">expand_more</span></div></div></div></header><main class="relative pt-16 w-full px-gutter-desktop bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="py-space-lg flex flex-col gap-space-xl">
+<!-- Header Greeting & Administrative Actions -->
+<div class="flex flex-col xl:flex-row items-start xl:items-end justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary/10 text-secondary font-label-sm text-label-sm tracking-wider uppercase font-semibold">Live System Oversight</span>
+<span class="text-outline-variant font-label-sm text-label-sm">|</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+            Sync Interval: 60s
+          </span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary tracking-tight">Welcome to Edlegna Administration</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Real-time overview of scholarship registries, applicant engagement, AI matching health, and system governance.</p>
+</div>
+<div class="flex flex-wrap items-center gap-3 w-full xl:w-auto">
+<button class="flex items-center gap-2 px-4 py-2.5 rounded-lg bg-surface-container-lowest text-primary font-label-lg text-label-lg shadow-sm hover:bg-surface-container-high transition-all active:scale-95">
+<span class="material-symbols-outlined text-[18px] text-secondary">sync</span>
+<span>Run Verification Sync</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-2.5 rounded-lg bg-surface-container-lowest text-primary font-label-lg text-label-lg shadow-sm hover:bg-surface-container-high transition-all active:scale-95">
+<span class="material-symbols-outlined text-[18px] text-primary">download</span>
+<span>Generate Audit Report</span>
+</button>
+<button class="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg shadow-md hover:bg-primary-container transition-all active:scale-95">
+<span class="material-symbols-outlined text-[20px]">add</span>
+<span>+ Add New Scholarship</span>
+</button>
+</div>
+</div>
+<!-- 6 KPI Metric Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-space-md">
+<!-- 1. Total Scholarships -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Total Scholarships</span>
+<span class="font-headline-lg text-headline-lg text-primary mt-1 font-bold">1,428</span>
+</div>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">account_balance</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex flex-col gap-1.5">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="text-secondary font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>+34 (+2.8%)
+            </span>
+<span class="text-outline">this month</span>
+</div>
+<div class="w-full bg-surface-container-high h-1 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-[78%]"></div>
+</div>
+</div>
+</div>
+<!-- 2. Active Opportunities -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Active Opportunities</span>
+<span class="font-headline-lg text-headline-lg text-primary mt-1 font-bold">1,294</span>
+</div>
+<div class="w-8 h-8 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex flex-col gap-1.5">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="text-secondary font-semibold">90.6% Live</span>
+<span class="text-outline">open intake</span>
+</div>
+<div class="w-full bg-surface-container-high h-1 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full w-[90.6%]"></div>
+</div>
+</div>
+</div>
+<!-- 3. Expired / Archived -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Archived / Expired</span>
+<span class="font-headline-lg text-headline-lg text-on-surface mt-1 font-bold">134</span>
+</div>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-outline flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">archive</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex flex-col gap-1.5">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="text-tertiary font-semibold">12 Pending Purge</span>
+<span class="text-outline">review queue</span>
+</div>
+<div class="w-full bg-surface-container-high h-1 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full w-[28%]"></div>
+</div>
+</div>
+</div>
+<!-- 4. Registered Students -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Registered Students</span>
+<span class="font-headline-lg text-headline-lg text-primary mt-1 font-bold">24,850</span>
+</div>
+<div class="w-8 h-8 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">school</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex flex-col gap-1.5">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="text-secondary font-semibold">+1,240</span>
+<span class="text-outline">94.2% dossiers</span>
+</div>
+<div class="w-full bg-surface-container-high h-1 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-[94.2%]"></div>
+</div>
+</div>
+</div>
+<!-- 5. AI Semantic Inquiries -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">AI Inquiries</span>
+<span class="font-headline-lg text-headline-lg text-primary mt-1 font-bold">184.2k</span>
+</div>
+<div class="w-8 h-8 rounded-lg bg-secondary-container/20 flex items-center justify-center text-on-secondary-container flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">psychology</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex flex-col gap-1.5">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="text-on-secondary-container font-semibold">142ms avg</span>
+<span class="text-outline">96.4% vector acc</span>
+</div>
+<div class="w-full bg-surface-container-high h-1 rounded-full overflow-hidden">
+<div class="bg-on-secondary-container h-full rounded-full w-[96.4%]"></div>
+</div>
+</div>
+</div>
+<!-- 6. Saved Grants in Portfolios -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Saved Grants</span>
+<span class="font-headline-lg text-headline-lg text-primary mt-1 font-bold">52,190</span>
+</div>
+<div class="w-8 h-8 rounded-lg bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">bookmark_heart</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex flex-col gap-1.5">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="text-tertiary font-semibold">€42.8M total</span>
+<span class="text-outline">tracked endowment</span>
+</div>
+<div class="w-full bg-surface-container-high h-1 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full w-[82%]"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Middle Analytical Section (60% / 40%) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Column 1: Intake & Upcoming Deadlines (60% = 7 cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-xl">
+<!-- Scholarship Intake & Growth Analytics -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Volume Velocity</span>
+<h2 class="font-headline-md text-headline-md text-primary">Scholarship Intake &amp; Growth Analytics</h2>
+</div>
+<div class="flex items-center bg-surface-container-low p-1 rounded-lg text-on-surface-variant font-label-sm text-label-sm">
+<button class="px-3 py-1 rounded bg-surface-container-lowest text-primary font-semibold shadow-xs">Last 30 Days</button>
+<button class="px-3 py-1 rounded hover:text-on-surface transition-colors">Q3 2025</button>
+<button class="px-3 py-1 rounded hover:text-on-surface transition-colors">YTD</button>
+</div>
+</div>
+<!-- Rich SVG Area/Bar Graph Visualization -->
+<div class="w-full h-56 pt-4 flex flex-col justify-end">
+<svg class="w-full h-44 overflow-visible" fill="none" preserveaspectratio="none" viewbox="0 0 680 160">
+<!-- Grid lines -->
+<line class="text-surface-container-high" stroke="currentColor" stroke-dasharray="4 4" x1="0" x2="680" y1="20" y2="20"></line>
+<line class="text-surface-container-high" stroke="currentColor" stroke-dasharray="4 4" x1="0" x2="680" y1="65" y2="65"></line>
+<line class="text-surface-container-high" stroke="currentColor" stroke-dasharray="4 4" x1="0" x2="680" y1="110" y2="110"></line>
+<line class="text-surface-container-high" stroke="currentColor" x1="0" x2="680" y1="155" y2="155"></line>
+<!-- Monthly additions area gradient fill -->
+<defs>
+<lineargradient id="areaGradient" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#006b5f" stop-opacity="0.25"></stop>
+<stop offset="100%" stop-color="#006b5f" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<path d="M0,130 C60,115 100,95 160,85 C220,75 260,110 320,60 C380,10 440,70 500,45 C560,20 620,35 680,25 L680,155 L0,155 Z" fill="url(#areaGradient)"></path>
+<!-- Line 1: New Additions -->
+<path d="M0,130 C60,115 100,95 160,85 C220,75 260,110 320,60 C380,10 440,70 500,45 C560,20 620,35 680,25" fill="none" stroke="#006b5f" stroke-linecap="round" stroke-width="2.5"></path>
+<!-- Line 2: Closed Applications (Dotted) -->
+<path d="M0,145 C60,140 100,120 160,125 C220,130 260,100 320,115 C380,80 440,90 500,75 C560,85 620,65 680,50" fill="none" stroke="#727975" stroke-dasharray="5 4" stroke-width="2"></path>
+<!-- Data Node Highlights -->
+<circle cx="320" cy="60" fill="#006b5f" r="4.5" stroke="#ffffff" stroke-width="2"></circle>
+<circle cx="500" cy="45" fill="#006b5f" r="4.5" stroke="#ffffff" stroke-width="2"></circle>
+<circle cx="680" cy="25" fill="#08241b" r="5" stroke="#ffffff" stroke-width="2"></circle>
+</svg>
+<div class="flex justify-between text-outline font-label-sm text-label-sm pt-2">
+<span>Aug 01</span>
+<span>Aug 08</span>
+<span>Aug 15</span>
+<span>Aug 22</span>
+<span>Aug 29</span>
+<span>Sep 05</span>
+<span>Sep 12 (Today)</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-3 border-t-0 bg-surface-container-low p-3 rounded-lg">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface">New Registrations (+342)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-outline"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Closed Applications (-118)</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold">Net +224 Openings</span>
+</div>
+<!-- Breakdown pills -->
+<div class="grid grid-cols-3 gap-2 pt-1">
+<div class="p-2.5 rounded-lg bg-surface-container-high/40 flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Undergraduate Grants</span>
+<div class="flex items-baseline justify-between mt-1">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">38%</span>
+<span class="font-label-sm text-label-sm text-outline">542 progs</span>
+</div>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-high/40 flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Master's &amp; Postgrad</span>
+<div class="flex items-baseline justify-between mt-1">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">44%</span>
+<span class="font-label-sm text-label-sm text-outline">628 progs</span>
+</div>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-high/40 flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Doctoral / Postdoc</span>
+<div class="flex items-baseline justify-between mt-1">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">18%</span>
+<span class="font-label-sm text-label-sm text-outline">258 progs</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Upcoming Critical Deadlines (Next 14 Days) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-error font-semibold">Priority Action</span>
+<h2 class="font-headline-md text-headline-md text-primary">Upcoming Critical Deadlines (Next 14 Days)</h2>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+              3 High Urgency
+            </span>
+</div>
+<div class="flex flex-col gap-3">
+<!-- Rhodes Scholarship -->
+<div class="p-4 rounded-xl bg-surface-container-low hover:bg-surface-container-high transition-colors flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+<div class="flex items-start gap-3.5 min-w-0">
+<div class="w-10 h-10 rounded-lg bg-primary text-on-primary font-headline-sm text-headline-sm flex items-center justify-center flex-shrink-0">
+                  R
+                </div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold truncate">Rhodes Scholarship for Global Candidates</span>
+<span class="px-2 py-0.5 rounded bg-error/10 text-error font-label-sm text-label-sm font-bold flex-shrink-0">9 Days Left</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant font-label-sm text-label-sm mt-0.5">
+<span>Oxford University, UK</span>
+<span>•</span>
+<span class="font-semibold text-secondary">412 active applicants</span>
+<span>•</span>
+<span>Full Tuition + £19,237</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 self-end sm:self-center flex-shrink-0">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-primary hover:bg-surface-container-highest font-label-sm text-label-sm transition-colors shadow-xs">
+                  View Applicants
+                </button>
+<button class="p-1.5 rounded-lg bg-surface-container-lowest text-secondary hover:bg-surface-container-highest transition-colors shadow-xs" title="Broadcast Reminder">
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</div>
+</div>
+<!-- DAAD Helmut-Schmidt Programme -->
+<div class="p-4 rounded-xl bg-surface-container-low hover:bg-surface-container-high transition-colors flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+<div class="flex items-start gap-3.5 min-w-0">
+<div class="w-10 h-10 rounded-lg bg-secondary text-on-secondary font-headline-sm text-headline-sm flex items-center justify-center flex-shrink-0">
+                  D
+                </div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold truncate">DAAD Helmut-Schmidt Programme (PPGG)</span>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold flex-shrink-0">13 Days Left</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant font-label-sm text-label-sm mt-0.5">
+<span>Federal Republic of Germany</span>
+<span>•</span>
+<span class="font-semibold text-secondary">680 active applicants</span>
+<span>•</span>
+<span>€934/mo + Travel</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 self-end sm:self-center flex-shrink-0">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-primary hover:bg-surface-container-highest font-label-sm text-label-sm transition-colors shadow-xs">
+                  View Applicants
+                </button>
+<button class="p-1.5 rounded-lg bg-surface-container-lowest text-secondary hover:bg-surface-container-highest transition-colors shadow-xs" title="Audit Donor Portal">
+<span class="material-symbols-outlined text-[18px]">fact_check</span>
+</button>
+</div>
+</div>
+<!-- Chevening Leadership Grant -->
+<div class="p-4 rounded-xl bg-surface-container-low hover:bg-surface-container-high transition-colors flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+<div class="flex items-start gap-3.5 min-w-0">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary-container font-headline-sm text-headline-sm flex items-center justify-center flex-shrink-0">
+                  C
+                </div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold truncate">Chevening Global Leadership Grant</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-semibold flex-shrink-0">Closing in 28 Days</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant font-label-sm text-label-sm mt-0.5">
+<span>Foreign, Commonwealth &amp; Dev Office (UK)</span>
+<span>•</span>
+<span class="font-semibold text-secondary">1,024 active applicants</span>
+<span>•</span>
+<span>Full Degree Funding</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 self-end sm:self-center flex-shrink-0">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-primary hover:bg-surface-container-highest font-label-sm text-label-sm transition-colors shadow-xs">
+                  View Applicants
+                </button>
+<button class="p-1.5 rounded-lg bg-surface-container-lowest text-secondary hover:bg-surface-container-highest transition-colors shadow-xs" title="Broadcast Reminder">
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Column 2: Regional Distribution & Admin Activity (40% = 5 cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-xl">
+<!-- Scholarship Distribution by Host Region / Country -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Geographic Governance</span>
+<h2 class="font-headline-md text-headline-md text-primary">Distribution by Host Region</h2>
+</div>
+<div class="flex items-center gap-6 py-2">
+<!-- Inline SVG Donut Chart -->
+<div class="relative w-36 h-36 flex-shrink-0 flex items-center justify-center">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 100 100">
+<circle cx="50" cy="50" fill="none" r="38" stroke="#eff4ff" stroke-width="12"></circle>
+<!-- 28% Germany -->
+<circle cx="50" cy="50" fill="none" r="38" stroke="#08241b" stroke-dasharray="66.85 238.76" stroke-dashoffset="0" stroke-width="12"></circle>
+<!-- 24% UK -->
+<circle cx="50" cy="50" fill="none" r="38" stroke="#006b5f" stroke-dasharray="57.3 238.76" stroke-dashoffset="-66.85" stroke-width="12"></circle>
+<!-- 22% USA/Canada -->
+<circle cx="50" cy="50" fill="none" r="38" stroke="#6df5e1" stroke-dasharray="52.52 238.76" stroke-dashoffset="-124.15" stroke-width="12"></circle>
+<!-- 14% Nordic -->
+<circle cx="50" cy="50" fill="none" r="38" stroke="#cba72f" stroke-dasharray="33.42 238.76" stroke-dashoffset="-176.67" stroke-width="12"></circle>
+<!-- 12% Japan / Pan-Asia -->
+<circle cx="50" cy="50" fill="none" r="38" stroke="#727975" stroke-dasharray="28.65 238.76" stroke-dashoffset="-210.09" stroke-width="12"></circle>
+</svg>
+<div class="absolute flex flex-col items-center justify-center text-center">
+<span class="font-headline-sm text-headline-sm text-primary font-bold leading-none">1,428</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[10px]">Indexed</span>
+</div>
+</div>
+<!-- Legend with Counts -->
+<div class="flex flex-col gap-2 flex-1">
+<div class="flex items-center justify-between text-on-surface font-label-sm text-label-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary flex-shrink-0"></span>
+<span class="truncate">Germany &amp; DAAD</span>
+</div>
+<span class="font-semibold">28% (400)</span>
+</div>
+<div class="flex items-center justify-between text-on-surface font-label-sm text-label-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary flex-shrink-0"></span>
+<span class="truncate">United Kingdom &amp; FCDO</span>
+</div>
+<span class="font-semibold">24% (343)</span>
+</div>
+<div class="flex items-center justify-between text-on-surface font-label-sm text-label-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container flex-shrink-0"></span>
+<span class="truncate">US &amp; Canada</span>
+</div>
+<span class="font-semibold">22% (314)</span>
+</div>
+<div class="flex items-center justify-between text-on-surface font-label-sm text-label-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-container flex-shrink-0"></span>
+<span class="truncate">Nordic Councils</span>
+</div>
+<span class="font-semibold">14% (200)</span>
+</div>
+<div class="flex items-center justify-between text-on-surface font-label-sm text-label-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-outline flex-shrink-0"></span>
+<span class="truncate">Japan (MEXT) / Asia</span>
+</div>
+<span class="font-semibold">12% (171)</span>
+</div>
+</div>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+              Embassy &amp; Cultural Attache Linkages
+            </span>
+<span class="font-semibold text-primary">All 52 Sovereign Portals Live</span>
+</div>
+</div>
+<!-- Recent Administrative & System Activities -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Audit Trail</span>
+<h2 class="font-headline-md text-headline-md text-primary">System Activities</h2>
+</div>
+<a class="font-label-sm text-label-sm text-secondary hover:underline font-semibold" href="#">View Master Log</a>
+</div>
+<div class="flex flex-col gap-3">
+<!-- Feed Item 1 -->
+<div class="p-3 rounded-lg bg-surface-container-low flex items-start gap-3">
+<div class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center flex-shrink-0 text-[12px] font-bold">
+                AB
+              </div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-semibold">Dr. Aster Berhanu</span>
+<span class="font-label-sm text-label-sm text-outline">14m ago</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-snug">
+                  Approved funding tier for <span class="text-on-surface font-semibold">Mastercard Foundation Cambridge</span> (€59k/yr).
+                </p>
+<span class="mt-1.5 self-start px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+                  Tier-1 Endorsement
+                </span>
+</div>
+</div>
+<!-- Feed Item 2 -->
+<div class="p-3 rounded-lg bg-surface-container-low flex items-start gap-3">
+<div class="w-7 h-7 rounded-full bg-secondary/20 text-secondary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[15px]">smart_toy</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Automated Sync Daemon</span>
+<span class="font-label-sm text-label-sm text-outline">42m ago</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-snug">
+                  Crawled and verified 14 partner university admission portals. Zero 404 links found.
+                </p>
+<span class="mt-1.5 self-start px-2 py-0.5 rounded bg-secondary-container/30 text-on-secondary-container font-label-sm text-label-sm">
+                  Crawl: Success 100%
+                </span>
+</div>
+</div>
+<!-- Feed Item 3 -->
+<div class="p-3 rounded-lg bg-surface-container-low flex items-start gap-3">
+<div class="w-7 h-7 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center flex-shrink-0 text-[12px] font-bold">
+                AK
+              </div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-semibold">Abebe K. (Admin)</span>
+<span class="font-label-sm text-label-sm text-outline">2h ago</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-snug">
+                  Flagged eligibility criteria update for Chevening IELTS requirement (7.0 band threshold).
+                </p>
+<span class="mt-1.5 self-start px-2 py-0.5 rounded bg-tertiary-container/20 text-on-tertiary-container font-label-sm text-label-sm">
+                  Rule Trigger Updated
+                </span>
+</div>
+</div>
+<!-- Feed Item 4 -->
+<div class="p-3 rounded-lg bg-surface-container-low flex items-start gap-3">
+<div class="w-7 h-7 rounded-full bg-surface-container-high text-outline flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[15px]">security</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Security Guardrail</span>
+<span class="font-label-sm text-label-sm text-outline">4h ago</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-snug">
+                  Rate limit trigger resolved for student bulk export. Identity challenge passed.
+                </p>
+<span class="mt-1.5 self-start px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+                  Auth Resolved
+                </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Section: Recently Added Opportunities Grid -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Registry Influx</span>
+<h2 class="font-headline-md text-headline-md text-primary">Recently Added Opportunities</h2>
+</div>
+<button class="px-3.5 py-1.5 rounded-lg bg-surface-container-lowest text-primary font-label-sm text-label-sm hover:bg-surface-container-high transition-colors shadow-xs flex items-center gap-1.5">
+<span>View All in Catalog</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between gap-3">
+<div class="flex items-start justify-between gap-2">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary-container font-headline-sm text-headline-sm flex items-center justify-center font-bold">
+              MF
+            </div>
+<span class="px-2 py-0.5 rounded-full bg-secondary/10 text-secondary font-label-sm text-label-sm font-semibold">
+              Active / Published
+            </span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold line-clamp-1">Mastercard Scholars at Cambridge</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">United Kingdom • Cambridge Trust</span>
+</div>
+<div class="pt-2 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="text-primary font-semibold">€59,000 / yr</span>
+<span>Deadline: Nov 15</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between gap-3">
+<div class="flex items-start justify-between gap-2">
+<div class="w-10 h-10 rounded-lg bg-secondary text-on-secondary font-headline-sm text-headline-sm flex items-center justify-center font-bold">
+              KA
+            </div>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">
+              Draft Review
+            </span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold line-clamp-1">KAUST Global Fellowship in Energy</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Saudi Arabia • Graduate Studies</span>
+</div>
+<div class="pt-2 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="text-primary font-semibold">$75,000 / yr + Lab</span>
+<span>Deadline: Oct 30</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between gap-3">
+<div class="flex items-start justify-between gap-2">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest text-primary font-headline-sm text-headline-sm flex items-center justify-center font-bold">
+              SI
+            </div>
+<span class="px-2 py-0.5 rounded-full bg-secondary/10 text-secondary font-label-sm text-label-sm font-semibold">
+              Active / Published
+            </span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold line-clamp-1">Swedish Institute Global Leaders (SISGP)</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Sweden • Ministry of Foreign Affairs</span>
+</div>
+<div class="pt-2 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="text-primary font-semibold">12,000 SEK / mo</span>
+<span>Deadline: Jan 16</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between gap-3">
+<div class="flex items-start justify-between gap-2">
+<div class="w-10 h-10 rounded-lg bg-tertiary text-on-tertiary font-headline-sm text-headline-sm flex items-center justify-center font-bold">
+              AU
+            </div>
+<span class="px-2 py-0.5 rounded-full bg-error/10 text-error font-label-sm text-label-sm font-semibold">
+              Needs Donor Verification
+            </span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold line-clamp-1">Australia Awards Fellowship for Africa</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Australia • DFAT Consortium</span>
+</div>
+<div class="pt-2 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="text-primary font-semibold">Full Fellowship</span>
+<span>Deadline: Dec 01</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Link / Regulatory Compliance Notice Banner -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+<div class="flex items-center gap-3.5">
+<div class="w-9 h-9 rounded-lg bg-primary text-on-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-semibold">Compliance Notice</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Ethiopian Higher Education &amp; Foreign Fellowship Alignment Charter v2.4 actively enforced. All 1,428 listings verified against predatory fee prohibitions.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-3 flex-shrink-0 self-end md:self-center">
+<a class="font-label-sm text-label-sm text-secondary hover:underline font-semibold flex items-center gap-1" href="#">
+<span>Charter Documentation</span>
+<span class="material-symbols-outlined text-[15px]">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

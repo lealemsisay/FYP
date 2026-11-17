@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"tertiary-fixed-dim":"#e9c349","primary-container":"#1f3a30","secondary":"#006b5f","inverse-primary":"#afcdbf","surface-variant":"#d9e3f6","surface-container":"#e6eeff","background":"#f8f9ff","on-secondary-fixed-variant":"#005048","secondary-fixed-dim":"#4fdbc8","surface":"#f8f9ff","secondary-fixed":"#71f8e4","on-primary":"#ffffff","on-secondary":"#ffffff","surface-container-high":"#dee9fc","on-surface-variant":"#424845","on-primary-fixed":"#042017","primary-fixed-dim":"#afcdbf","error":"#ba1a1a","outline":"#727975","on-tertiary-fixed":"#241a00","surface-bright":"#f8f9ff","secondary-container":"#6df5e1","on-primary-container":"#87a497","outline-variant":"#c1c8c3","surface-container-highest":"#d9e3f6","on-primary-fixed-variant":"#314c42","surface-tint":"#486459","error-container":"#ffdad6","surface-container-lowest":"#ffffff","tertiary-fixed":"#ffe088","inverse-surface":"#27313f","on-background":"#121c2a","on-error":"#ffffff","surface-dim":"#d0dbed","on-tertiary-container":"#4e3d00","primary":"#08241b","on-error-container":"#93000a","tertiary":"#735c00","primary-fixed":"#cbeadb","on-surface":"#121c2a","surface-container-low":"#eff4ff","on-tertiary-fixed-variant":"#574500","tertiary-container":"#cba72f","on-secondary-container":"#006f64","on-tertiary":"#ffffff","inverse-on-surface":"#eaf1ff","on-secondary-fixed":"#00201c"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xl":"2.5rem","space-lg":"1.5rem","gutter":"1.5rem","margin":"1rem","space-sm":"0.5rem","gutter-desktop":"2rem","margin-desktop":"3.5rem","margin-tablet":"2rem","space-xs":"0.25rem","space-md":"1rem"},"fontFamily":{"headline-xl-mobile":["EB Garamond"],"label-md":["DM Sans"],"label-lg":["DM Sans"],"headline-md":["EB Garamond"],"body-md":["DM Sans"],"display-lg-mobile":["EB Garamond"],"display-lg":["EB Garamond"],"headline-sm":["EB Garamond"],"headline-xl":["EB Garamond"],"headline-lg":["EB Garamond"],"body-lg":["DM Sans"],"label-sm":["DM Sans"],"body-sm":["DM Sans"]},"fontSize":{"headline-xl-mobile":["2rem",{"lineHeight":"2.5rem","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.03em","fontWeight":"500"}],"label-lg":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0.02em","fontWeight":"500"}],"headline-md":["1.5rem",{"lineHeight":"2rem","fontWeight":"600"}],"body-md":["1rem",{"lineHeight":"1.5rem","fontWeight":"400"}],"display-lg-mobile":["2.5rem",{"lineHeight":"3rem","letterSpacing":"-0.015em","fontWeight":"600"}],"display-lg":["3.5rem",{"lineHeight":"4rem","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-sm":["1.25rem",{"lineHeight":"1.75rem","fontWeight":"600"}],"headline-xl":["2.5rem",{"lineHeight":"3rem","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-lg":["2rem",{"lineHeight":"2.5rem","fontWeight":"500"}],"body-lg":["1.125rem",{"lineHeight":"1.75rem","fontWeight":"400"}],"label-sm":["0.6875rem",{"lineHeight":"0.875rem","letterSpacing":"0.05em","fontWeight":"700"}],"body-sm":["0.875rem",{"lineHeight":"1.25rem","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(31,58,48,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="h-20 px-space-lg flex items-center gap-space-sm"><img alt="Edlegna Official Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrBU_YJRUkq_IOaMvZWggJrddQlUyW__D7oZkYGwhOcOiDf2a5upcDEOJgzBoVTBOq15IrQInlfQ0LXsYOQQgpZ_93xZAQfyfQ9sbAd6_ms74gYYLXhkhMR8Ix4naHm8W1q5HHD2H8HCQHolG8rxNiT5Q0M1mB_G9p0_NWeRWHC7vfEhdk8OJsHoSJb5iuWSA3Wdv3YSonc-qBy1RPpbu-fwUHxiOeCXtySiaz6GCFQw"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight">Edlegna</span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Scholar Portal</span></div></div><div class="px-space-md py-space-sm"><span class="px-space-md font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Discovery Suite</span></div><nav class="flex flex-col gap-space-xs px-space-md" data-active-classes="bg-primary-container text-on-primary font-bold"><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="dashboard" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-xl">space_dashboard</span><span>Dashboard</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="discover-scholarships" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-xl">travel_explore</span><span>Discover Scholarships</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="ai-recommendations" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-xl text-secondary">auto_awesome</span><span>AI Recommendations</span></div><span class="bg-secondary-container text-on-secondary-container font-label-sm text-label-sm px-space-xs py-0.5 rounded-full font-bold">12</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="eligibility-checker" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-xl">rule_folder</span><span>Eligibility Checker</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="saved-scholarships" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-xl">bookmark</span><span>Saved Scholarships</span></div><span class="bg-surface-container-high text-on-surface font-label-sm text-label-sm px-space-xs py-0.5 rounded-full">8</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="search-history" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-xl">history_edu</span><span>Search History</span></div></a></nav><div class="px-space-md pt-space-lg pb-space-sm"><span class="px-space-md font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Personal Dossier</span></div><nav class="flex flex-col gap-space-xs px-space-md" data-active-classes="bg-primary-container text-on-primary font-bold"><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="my-profile" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-xl">account_circle</span><span>My Profile</span></div><span class="text-tertiary font-label-sm text-label-sm font-bold">94%</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="notifications" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-xl">notifications</span><span>Notifications</span></div><span class="bg-error text-on-error font-label-sm text-label-sm px-space-xs py-0.5 rounded-full font-bold">3</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-label-lg text-label-lg" data-path="settings" href="#"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-xl">settings</span><span>Settings</span></div></a></nav></div><div class="p-space-md bg-surface-container-low/60 m-space-md rounded-lg flex items-center gap-space-md"><img alt="Profile" class="w-10 h-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpdcdYuqyrb_ZMzNePg0SIMiVbRJLFZf9IsINb3g755YkRU991jpUVB3jWhUt9_WG-TQ-RLzJGAUI5oNEiTja_75fT1MSXaE2doRSeEJhixb_-9o5dbJ0mqaZRKWrD2lieG0JfIbWLkd0dajglKt8ALMppVyJngOq1Nz5-AEf6bIPVnwU1WIY7uCeMgthnv16Pug-YvoQF4Z54xqKkOOOwNAA_ACZRsAO2IsXST3g"/><div class="flex flex-col min-w-0 flex-1"><span class="font-label-lg text-label-lg font-bold text-on-surface truncate">Julian Vance</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Stanford Fellow '26</span></div><a class="text-on-surface-variant hover:text-error transition-colors" data-path="sign-in" href="#" title="Sign Out"><span class="material-symbols-outlined text-lg">logout</span></a></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(31,58,48,0.04)] z-40 flex items-center justify-between px-space-lg lg:px-margin-desktop"><div class="flex items-center gap-space-md"><img alt="Edlegna Official Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrBU_YJRUkq_IOaMvZWggJrddQlUyW__D7oZkYGwhOcOiDf2a5upcDEOJgzBoVTBOq15IrQInlfQ0LXsYOQQgpZ_93xZAQfyfQ9sbAd6_ms74gYYLXhkhMR8Ix4naHm8W1q5HHD2H8HCQHolG8rxNiT5Q0M1mB_G9p0_NWeRWHC7vfEhdk8OJsHoSJb5iuWSA3Wdv3YSonc-qBy1RPpbu-fwUHxiOeCXtySiaz6GCFQw"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-semibold hidden md:inline-block">Edlegna Academic Portfolio</span></div><div class="flex items-center gap-space-lg"><div class="relative hidden sm:block w-72"><span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-on-surface-variant text-lg">search</span><input class="w-full pl-10 pr-space-md py-space-xs bg-surface-container-lowest text-on-surface font-body-sm text-body-sm rounded-lg outline-none ring-1 ring-outline-variant focus:ring-primary" placeholder="Search grants, donors, fields..." type="text"/></div><a class="relative p-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-2xl">notifications</span><span class="absolute top-1 right-1 w-2.5 h-2.5 bg-error rounded-full"></span></a><div class="flex items-center gap-space-sm pl-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpdcdYuqyrb_ZMzNePg0SIMiVbRJLFZf9IsINb3g755YkRU991jpUVB3jWhUt9_WG-TQ-RLzJGAUI5oNEiTja_75fT1MSXaE2doRSeEJhixb_-9o5dbJ0mqaZRKWrD2lieG0JfIbWLkd0dajglKt8ALMppVyJngOq1Nz5-AEf6bIPVnwU1WIY7uCeMgthnv16Pug-YvoQF4Z54xqKkOOOwNAA_ACZRsAO2IsXST3g"/><span class="font-label-md text-label-md font-bold text-on-surface hidden lg:inline">J. Vance</span></div></div></header><main class="relative pt-20 bg-surface min-h-screen px-space-md lg:px-space-xl py-space-lg"><div class="flex flex-col w-full">
+<!-- Dynamic Atmospheric Glow -->
+<div class="relative w-full">
+<div class="absolute -top-12 right-12 w-96 h-96 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-48 left-1/4 w-80 h-80 rounded-full bg-tertiary-fixed/15 blur-3xl pointer-events-none -z-10"></div>
+<!-- Editorial Header Section -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md mb-space-lg">
+<div class="flex flex-col max-w-2xl">
+<div class="flex items-center gap-space-xs text-secondary mb-space-xs">
+<span class="material-symbols-outlined text-lg">bookmarks</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest font-bold">Curated Dossier &amp; Deadlines</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary tracking-tight">Saved Scholarships &amp; Portfolio</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+          Track your bookmarked grants, synchronized application deadlines, and algorithmic eligibility readiness in a single scholarly dossier.
+        </p>
+</div>
+<!-- Quick Action Utilities -->
+<div class="flex items-center gap-space-sm flex-wrap">
+<button class="flex items-center gap-space-xs px-space-md py-space-sm bg-surface-container-lowest text-primary rounded-lg shadow-sm hover:bg-surface-container-high transition-colors font-label-lg text-label-lg font-medium group" id="exportBtn">
+<span class="material-symbols-outlined text-lg text-secondary group-hover:rotate-12 transition-transform">event_upcoming</span>
+<span>Export Portfolio (iCal / CSV)</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-sm bg-primary text-on-primary rounded-lg shadow-md hover:bg-primary-container transition-colors font-label-lg text-label-lg font-medium">
+<span class="material-symbols-outlined text-lg">add_circle</span>
+<span>Add Custom Grant</span>
+</button>
+</div>
+</div>
+<!-- Controls Bar: Filter Pills, Search, Sort -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm mb-space-xl flex flex-col gap-space-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<!-- Search Input -->
+<div class="relative flex-1 max-w-md">
+<span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-on-surface-variant text-lg">manage_search</span>
+<input class="w-full pl-10 pr-space-md py-space-sm bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg outline-none focus:bg-surface-container-lowest transition-all" id="scholarshipSearch" placeholder="Search within saved scholarships, institutions, or tags..." type="text"/>
+</div>
+<!-- Sort Select and View Counts -->
+<div class="flex items-center gap-space-md justify-between md:justify-end">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span>Showing:</span>
+<span class="font-bold text-primary" id="savedCountLabel">4 Opportunities</span>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1 rounded-lg">
+<span class="material-symbols-outlined text-sm text-on-surface-variant">sort</span>
+<select class="bg-transparent text-on-surface font-label-md text-label-md py-1 pr-2 outline-none font-medium cursor-pointer">
+<option>Sort by: Deadline (Soonest first)</option>
+<option>Sort by: AI Match Score</option>
+<option>Sort by: Award Value</option>
+<option>Sort by: Recently Saved</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Filter Pills -->
+<div class="flex items-center gap-space-xs flex-wrap pt-space-xs">
+<button class="filter-pill active px-space-md py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md font-semibold transition-all shadow-sm">
+          All Saved (7)
+        </button>
+<button class="filter-pill px-space-md py-1.5 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md font-medium transition-all flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+          Urgent Deadlines (&lt;30 days) (2)
+        </button>
+<button class="filter-pill px-space-md py-1.5 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md font-medium transition-all">
+          Full Funding (5)
+        </button>
+<button class="filter-pill px-space-md py-1.5 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md font-medium transition-all flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-tertiary-container"></span>
+          Action Required (1)
+        </button>
+<button class="filter-pill px-space-md py-1.5 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md font-medium transition-all">
+          Draft In Progress (1)
+        </button>
+</div>
+</div>
+<!-- Main Content Layout (4:8 / Asymmetrical Split) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Left Column: Scholarship Cards Feed (8 Cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg" id="cardsContainer">
+<!-- CARD 1: Rhodes Scholarship -->
+<article class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all relative overflow-hidden group">
+<!-- Subtle Decorative Accent Strip -->
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-error"></div>
+<div class="flex flex-col gap-space-md">
+<!-- Header Row with Oxford Badge, Title & Actions -->
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<img class="w-12 h-12 rounded-lg object-contain bg-surface-container-low p-1.5 flex-shrink-0" data-alt="University of Oxford historic coat of arms crest engraved in classic dark green and navy tones on archival collegiate paper" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjWh1RoLSKzqc7eSepMIpNg0dTko4l0ACFiY79Gu5mzYJ0A4t0HMXQ7metGItO7V80inPkGdjtTQKqvizitI-vxI1Izm8sxaMJN-vJorxrXsSirbsR9z7u2dNU2C7CqNqjbIlpfukktlR7zx9oOqM3kowh9fsjHr2vsWxo8lTkM8GWxw9g8_fSvxMxuVThHMzD26xUA8sPON0jemsr1-heh1FlvZPAU6YNnp4rrWQ"/>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">University of Oxford (UK)</span>
+<span class="text-on-surface-variant">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Postgraduate Degree</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary mt-0.5 group-hover:text-secondary transition-colors">
+                    Rhodes Scholarship for Global Candidates
+                  </h2>
+</div>
+</div>
+<!-- Top-right Bookmark/Dismiss Button -->
+<button class="p-2 text-on-surface-variant hover:text-error hover:bg-error-container/40 rounded-lg transition-colors" title="Remove from Saved">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">bookmark_remove</span>
+</button>
+</div>
+<!-- Value & AI Match Row -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm p-space-sm bg-surface-container-low rounded-lg">
+<div class="flex flex-col px-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Award Value</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">€59,490 <span class="font-body-sm text-body-sm font-normal text-on-surface-variant">/ yr</span></span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">100% Tuition + Living Stipend</span>
+</div>
+<div class="flex flex-col px-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Application Closing</span>
+<span class="font-label-lg text-label-lg font-bold text-error flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-base">alarm</span>
+                  In 9 Days (Oct 14, 2025)
+                </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">23:59 BST Deadline</span>
+</div>
+<div class="flex flex-col px-space-xs justify-center sm:items-end">
+<div class="inline-flex items-center gap-1.5 px-space-sm py-1 bg-secondary/10 rounded-full">
+<span class="material-symbols-outlined text-secondary text-sm">auto_awesome</span>
+<span class="font-label-lg text-label-lg font-bold text-secondary">95% AI Match</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">High Profile Compatibility</span>
+</div>
+</div>
+<!-- Progress Meter: Application Draft -->
+<div class="flex flex-col gap-1.5 bg-surface-container-lowest p-space-xs rounded-lg">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-secondary">edit_document</span>
+<span class="text-on-surface font-semibold">Application Draft Status</span>
+</div>
+<span class="font-bold text-secondary">60% Prepared (4 of 6 steps)</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 60%;"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Personal Statement: Completed</span>
+<span>2 References: Verified &amp; Pending Submission</span>
+</div>
+</div>
+<!-- Card Footer: Multi-Button Action Bar -->
+<div class="flex items-center justify-between pt-space-xs gap-space-sm flex-wrap">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm bg-surface-container px-2.5 py-1 rounded-md">
+<span class="material-symbols-outlined text-sm text-secondary">verified</span> Academic Merit
+                </span>
+<span class="inline-flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm bg-surface-container px-2.5 py-1 rounded-md">
+<span class="material-symbols-outlined text-sm text-secondary">language</span> UK Visas Included
+                </span>
+</div>
+<div class="flex items-center gap-space-xs">
+<a class="px-space-md py-space-sm text-on-surface-variant hover:text-primary font-label-md text-label-md font-semibold inline-flex items-center gap-1" href="#">
+                  Visit Official Portal
+                  <span class="material-symbols-outlined text-sm">north_east</span>
+</a>
+<a class="px-space-md py-space-sm bg-primary text-on-primary rounded-lg font-label-md text-label-md font-semibold hover:bg-primary-container transition-colors inline-flex items-center gap-1 shadow-sm" href="#">
+<span>Continue Application Draft</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</article>
+<!-- CARD 2: DAAD Helmut-Schmidt-Programme -->
+<article class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all relative overflow-hidden group">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-secondary"></div>
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<img class="w-12 h-12 rounded-lg object-contain bg-surface-container-low p-1.5 flex-shrink-0" data-alt="DAAD German Academic Exchange Service emblem in deep forest green and gold on structured parchment background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIvp77z1O75iwd1lzX9GEMQwW6MwnpePIr1pjCd7p_IxhuQSuUOB5Ooeg6DcNRj8wRRkABp1Do88_d-cFW7va21_UW1rEaOQ12ZfD7LDGd1DJGLpge5sMSwNqHWHk41mubV1SW9tWgb5yfzWERb_aW8EaisYmrqE74V32fQ0yDS0SdhNtKanlWrfYSdHpNWzy8_VIacR0e4X_eg1XzKbSpmmDYdKzenBHyx3ovhiA"/>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">DAAD Germany (Public Policy)</span>
+<span class="text-on-surface-variant">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Master of Public Policy &amp; Governance</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary mt-0.5 group-hover:text-secondary transition-colors">
+                    DAAD Helmut-Schmidt-Programme (PPGG)
+                  </h2>
+</div>
+</div>
+<button class="p-2 text-on-surface-variant hover:text-error hover:bg-error-container/40 rounded-lg transition-colors" title="Remove from Saved">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">bookmark_remove</span>
+</button>
+</div>
+<!-- Value & AI Match Row -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm p-space-sm bg-surface-container-low rounded-lg">
+<div class="flex flex-col px-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Benefit Package</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">€934 <span class="font-body-sm text-body-sm font-normal text-on-surface-variant">/ mo</span></span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">+ Full Tuition Waiver &amp; Health</span>
+</div>
+<div class="flex flex-col px-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Deadline Status</span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-base text-secondary">calendar_today</span>
+                  In 54 Days (Dec 15, 2025)
+                </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Regular Autumn Cycle</span>
+</div>
+<div class="flex flex-col px-space-xs justify-center sm:items-end">
+<div class="inline-flex items-center gap-1.5 px-space-sm py-1 bg-secondary/10 rounded-full">
+<span class="material-symbols-outlined text-secondary text-sm">auto_awesome</span>
+<span class="font-label-lg text-label-lg font-bold text-secondary">96% AI Match</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold mt-1">Exceptional Fit</span>
+</div>
+</div>
+<!-- Eligibility Verification Badge Box -->
+<div class="flex items-center justify-between p-space-sm bg-primary-fixed/30 rounded-lg">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-xl">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Verified Eligible by Edlegna Engine</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">All 5 deterministic requirements satisfied (GPA 3.82, B.A. in Political Science, Work Experience &gt; 2 yrs)</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-secondary bg-surface-container-lowest px-2 py-0.5 rounded-full">5/5 Checks</span>
+</div>
+<!-- Card Actions -->
+<div class="flex items-center justify-between pt-space-xs gap-space-sm flex-wrap">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm bg-surface-container px-2.5 py-1 rounded-md">
+<span class="material-symbols-outlined text-sm">flight</span> Travel Subsidy
+                </span>
+<span class="inline-flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm bg-surface-container px-2.5 py-1 rounded-md">
+<span class="material-symbols-outlined text-sm">school</span> German Language Course
+                </span>
+</div>
+<div class="flex items-center gap-space-xs">
+<a class="px-space-md py-space-sm text-on-surface-variant hover:text-primary font-label-md text-label-md font-semibold inline-flex items-center gap-1" href="#">
+                  Official Portal
+                  <span class="material-symbols-outlined text-sm">north_east</span>
+</a>
+<a class="px-space-md py-space-sm bg-surface-container-high text-primary hover:bg-surface-container-highest rounded-lg font-label-md text-label-md font-semibold transition-colors inline-flex items-center gap-1" href="#">
+<span>View Full Dossier</span>
+<span class="material-symbols-outlined text-sm">folder_open</span>
+</a>
+</div>
+</div>
+</div>
+</article>
+<!-- CARD 3: Chevening Leadership Fellowship -->
+<article class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all relative overflow-hidden group">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-tertiary"></div>
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<img class="w-12 h-12 rounded-lg object-contain bg-surface-container-low p-1.5 flex-shrink-0" data-alt="Foreign, Commonwealth &amp; Development Office UK Chevening insignia in embossed metallic gold on deep slate textured card" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSufl8BtQJ8xrjkj_qF9-2AgmnNL1229OGiJh7h4oakTqQJPdjSSCanDLgYZ3KBi22lzUnFvNF6O_DEJLahfkP5_ZHP6VoLQEyH7d5e8EHy9THSVscpxUC2hHJaBv8CkamkL5ffkeHeSTnq48uczfmyeZU966HUb9aIia6Ht3yU8nM2EfvXUm2CWJG0BzREFXT82qMKMo0awWeuR-_CoPn3QizjQrPC96neNQBDac"/>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">UK Foreign &amp; Commonwealth Office (FCDO)</span>
+<span class="text-on-surface-variant">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Global Leadership Grant</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary mt-0.5 group-hover:text-secondary transition-colors">
+                    Chevening Leadership Fellowship
+                  </h2>
+</div>
+</div>
+<button class="p-2 text-on-surface-variant hover:text-error hover:bg-error-container/40 rounded-lg transition-colors" title="Remove from Saved">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">bookmark_remove</span>
+</button>
+</div>
+<!-- Value & Urgency Row -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm p-space-sm bg-surface-container-low rounded-lg">
+<div class="flex flex-col px-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Funding Tier</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">100% Comprehensive</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Tuition + UK Economy Airfare</span>
+</div>
+<div class="flex flex-col px-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Closing Timeline</span>
+<span class="font-label-lg text-label-lg font-bold text-tertiary flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-base">hourglass_top</span>
+                  In 28 Days (Nov 04, 2025)
+                </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Less than 1 month remaining</span>
+</div>
+<div class="flex flex-col px-space-xs justify-center sm:items-end">
+<div class="inline-flex items-center gap-1.5 px-space-sm py-1 bg-secondary/10 rounded-full">
+<span class="material-symbols-outlined text-secondary text-sm">auto_awesome</span>
+<span class="font-label-lg text-label-lg font-bold text-secondary">91% AI Match</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Strong Leadership Match</span>
+</div>
+</div>
+<!-- Action Required Amber Warning Box -->
+<div class="flex items-center justify-between p-space-sm bg-tertiary-fixed/30 rounded-lg">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-xl">warning</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-tertiary-container">Action Required: Upload Official IELTS / TOEFL Scorecard</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Minimum academic overall 7.0 required by the British Council board.</span>
+</div>
+</div>
+<a class="px-space-sm py-1 bg-tertiary text-on-tertiary rounded font-label-sm text-label-sm font-bold hover:bg-on-tertiary-fixed-variant transition-colors whitespace-nowrap" href="#">
+                Upload Doc
+              </a>
+</div>
+<!-- Card Actions -->
+<div class="flex items-center justify-between pt-space-xs gap-space-sm flex-wrap">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm bg-surface-container px-2.5 py-1 rounded-md">
+<span class="material-symbols-outlined text-sm">groups</span> Networking Events
+                </span>
+<span class="inline-flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm bg-surface-container px-2.5 py-1 rounded-md">
+<span class="material-symbols-outlined text-sm">gavel</span> Policy Practicum
+                </span>
+</div>
+<div class="flex items-center gap-space-xs">
+<a class="px-space-md py-space-sm text-on-surface-variant hover:text-primary font-label-md text-label-md font-semibold inline-flex items-center gap-1" href="#">
+                  Details &amp; Syllabi
+                </a>
+<a class="px-space-md py-space-sm bg-primary text-on-primary rounded-lg font-label-md text-label-md font-semibold hover:bg-primary-container transition-colors inline-flex items-center gap-1 shadow-sm" href="#">
+<span>Start Dossier</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</article>
+<!-- CARD 4: Mastercard Foundation at Cambridge -->
+<article class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all relative overflow-hidden group">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-secondary-fixed-dim"></div>
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<img class="w-12 h-12 rounded-lg object-contain bg-surface-container-low p-1.5 flex-shrink-0" data-alt="University of Cambridge historical shield insignia rendered in fine university green and soft warm paper white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYupV3FeJZftoU63_mHX070iBeIiY1O7HY4wOmR6SHeFjgrljleky37jBLC8S2ujA2eVATfyuqqc34Y57fbv1pR4AMbFMFPenLx7_wASkRDl7L5lZdG1duJlUuIFS6W1Z-UyC2iNcTXa4IdA7wwTUyAE4LfFKpWmxnKwD9Gxf3tz0pfhKRiHj36zTmdhuHYepu2YyR3t34VhmyoCY4HF-qXBgzSep6MFbKxktWInU"/>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Cambridge Trust &amp; Mastercard Foundation</span>
+<span class="text-on-surface-variant">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">STEM &amp; Development Research</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary mt-0.5 group-hover:text-secondary transition-colors">
+                    Mastercard Foundation Scholars Program at Cambridge
+                  </h2>
+</div>
+</div>
+<button class="p-2 text-on-surface-variant hover:text-error hover:bg-error-container/40 rounded-lg transition-colors" title="Remove from Saved">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">bookmark_remove</span>
+</button>
+</div>
+<!-- Value & AI Match Row -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm p-space-sm bg-surface-container-low rounded-lg">
+<div class="flex flex-col px-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Full Endowment</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">100% Tuition</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">+ Annual Stipend, Flights &amp; Laptop</span>
+</div>
+<div class="flex flex-col px-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Deadline</span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-base text-secondary">event</span>
+                  Jan 05, 2026
+                </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">75 Days remaining</span>
+</div>
+<div class="flex flex-col px-space-xs justify-center sm:items-end">
+<div class="inline-flex items-center gap-1.5 px-space-sm py-1 bg-secondary/10 rounded-full">
+<span class="material-symbols-outlined text-secondary text-sm">auto_awesome</span>
+<span class="font-label-lg text-label-lg font-bold text-secondary">98% AI Match</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold mt-1">Top Ranked Match</span>
+</div>
+</div>
+<!-- Eligibility Verified Note -->
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-secondary text-base">check</span>
+<span>All baseline criteria validated. Ready for application packet assembly.</span>
+</div>
+<!-- Card Actions -->
+<div class="flex items-center justify-between pt-space-xs gap-space-sm flex-wrap">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm bg-surface-container px-2.5 py-1 rounded-md">
+<span class="material-symbols-outlined text-sm">laptop_mac</span> Tech Equipment Grant
+                </span>
+<span class="inline-flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm bg-surface-container px-2.5 py-1 rounded-md">
+<span class="material-symbols-outlined text-sm">public</span> African Cohort Network
+                </span>
+</div>
+<div class="flex items-center gap-space-xs">
+<a class="px-space-md py-space-sm text-on-surface-variant hover:text-primary font-label-md text-label-md font-semibold inline-flex items-center gap-1" href="#">
+                  Official Portal
+                  <span class="material-symbols-outlined text-sm">north_east</span>
+</a>
+<a class="px-space-md py-space-sm bg-surface-container-high text-primary hover:bg-surface-container-highest rounded-lg font-label-md text-label-md font-semibold transition-colors inline-flex items-center gap-1" href="#">
+<span>View Details</span>
+<span class="material-symbols-outlined text-sm">visibility</span>
+</a>
+</div>
+</div>
+</div>
+</article>
+</div>
+<!-- Right Column: Deadline Alert Calendar & Intelligence Mini-Panels (4 Cols) -->
+<aside class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Calendar Alert Panel -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-xl">calendar_month</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Deadline Alert Matrix</h3>
+</div>
+<span class="font-label-sm text-label-sm uppercase font-bold text-on-surface-variant tracking-wider">Q4 2025</span>
+</div>
+<!-- Color-Coded Date Timeline -->
+<div class="flex flex-col gap-space-sm">
+<!-- Alert Item 1: Rhodes -->
+<div class="flex items-start gap-space-sm p-space-sm bg-error-container/30 rounded-lg">
+<div class="flex flex-col items-center justify-center w-12 h-12 bg-error text-on-error rounded-lg flex-shrink-0 font-bold">
+<span class="font-label-sm text-label-sm uppercase leading-none">OCT</span>
+<span class="font-headline-sm text-headline-sm leading-none mt-0.5">14</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface truncate">Rhodes Scholarship</span>
+<span class="font-label-sm text-label-sm font-bold text-error">9 Days</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Oxford Global Portal</span>
+<span class="font-label-sm text-label-sm text-error mt-0.5 font-medium">Critical: Finalize references</span>
+</div>
+</div>
+<!-- Alert Item 2: Chevening -->
+<div class="flex items-start gap-space-sm p-space-sm bg-tertiary-fixed/30 rounded-lg">
+<div class="flex flex-col items-center justify-center w-12 h-12 bg-tertiary text-on-tertiary rounded-lg flex-shrink-0 font-bold">
+<span class="font-label-sm text-label-sm uppercase leading-none">NOV</span>
+<span class="font-headline-sm text-headline-sm leading-none mt-0.5">04</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface truncate">Chevening Fellowship</span>
+<span class="font-label-sm text-label-sm font-bold text-tertiary">28 Days</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">UK FCDO Online App</span>
+<span class="font-label-sm text-label-sm text-on-tertiary-container mt-0.5 font-medium">Upload English Test</span>
+</div>
+</div>
+<!-- Alert Item 3: DAAD -->
+<div class="flex items-start gap-space-sm p-space-sm bg-surface-container-low rounded-lg">
+<div class="flex flex-col items-center justify-center w-12 h-12 bg-secondary text-on-secondary rounded-lg flex-shrink-0 font-bold">
+<span class="font-label-sm text-label-sm uppercase leading-none">DEC</span>
+<span class="font-headline-sm text-headline-sm leading-none mt-0.5">15</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface truncate">DAAD Helmut-Schmidt</span>
+<span class="font-label-sm text-label-sm font-semibold text-secondary">54 Days</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">DAAD Portal Direct</span>
+<span class="font-label-sm text-label-sm text-secondary mt-0.5 font-medium">5/5 Requirements Ready</span>
+</div>
+</div>
+<!-- Alert Item 4: Cambridge -->
+<div class="flex items-start gap-space-sm p-space-sm bg-surface-container-low rounded-lg">
+<div class="flex flex-col items-center justify-center w-12 h-12 bg-primary text-on-primary rounded-lg flex-shrink-0 font-bold">
+<span class="font-label-sm text-label-sm uppercase leading-none">JAN</span>
+<span class="font-headline-sm text-headline-sm leading-none mt-0.5">05</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface truncate">Cambridge Mastercard</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface-variant">75 Days</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Trust Application System</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">All Dossier Checks Clear</span>
+</div>
+</div>
+</div>
+<!-- Calendar Integration Sync Trigger -->
+<div class="mt-space-md pt-space-md border-t border-surface-container">
+<button class="w-full flex items-center justify-center gap-space-xs py-space-sm bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-md text-label-md font-bold rounded-lg transition-colors">
+<span class="material-symbols-outlined text-lg">sync</span>
+<span>Sync All to Google / Apple Calendar</span>
+</button>
+</div>
+</div>
+<!-- Portfolio Value & Metrics Card with Chart -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-primary">Saved Portfolio Value</h3>
+<span class="material-symbols-outlined text-secondary text-xl">account_balance</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-primary font-bold">€184k+</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Cumulative Potential</span>
+</div>
+<!-- Progress Ring SVG Representation -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center gap-space-md">
+<div class="relative w-16 h-16 flex-shrink-0 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container-high" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-secondary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="82, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="absolute font-label-sm text-label-sm font-bold text-primary">82%</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Overall Dossier Readiness</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">4 of 5 requirements met across all 4 bookmarked institutions.</span>
+</div>
+</div>
+</div>
+<!-- Trust & Reassurance Note -->
+<div class="bg-primary text-on-primary p-space-lg rounded-xl shadow-md flex flex-col gap-space-sm relative overflow-hidden">
+<div class="absolute -right-4 -bottom-4 w-28 h-28 bg-secondary/30 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-center gap-space-xs text-secondary-container">
+<span class="material-symbols-outlined text-xl">devices</span>
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider">Device Synchronization</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-primary">Always In Sync &amp; Alerted</h4>
+<p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed">
+            Saved scholarships automatically sync across all your logged-in devices. Edlegna dispatches priority notifications at <span class="text-on-primary font-bold">14, 7, and 2 days</span> before official portal closures so you never miss an intake.
+          </p>
+<div class="pt-space-xs flex items-center justify-between text-on-primary-container font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed"></span> Push &amp; Email active
+            </span>
+<a class="text-secondary-fixed hover:underline font-bold" href="#">Manage Alerts →</a>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</div>
+<script>
+  // Simple interactive behavior for active filter pill switching and client search filtering
+  document.addEventListener('DOMContentLoaded', () => {
+    const pills = document.querySelectorAll('.filter-pill');
+    pills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        pills.forEach(p => {
+          p.classList.remove('bg-primary', 'text-on-primary', 'font-semibold', 'shadow-sm');
+          p.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+        });
+        pill.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+        pill.classList.add('bg-primary', 'text-on-primary', 'font-semibold', 'shadow-sm');
+      });
+    });
+
+    const searchInput = document.getElementById('scholarshipSearch');
+    const cards = document.querySelectorAll('#cardsContainer > article');
+    const countLabel = document.getElementById('savedCountLabel');
+
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase().trim();
+        let visibleCount = 0;
+
+        cards.forEach(card => {
+          const text = card.textContent.toLowerCase();
+          if (text.includes(query)) {
+            card.style.display = 'block';
+            visibleCount++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        if (countLabel) {
+          countLabel.textContent = `${visibleCount} ${visibleCount === 1 ? 'Opportunity' : 'Opportunities'}`;
+        }
+      });
+    }
+
+    const exportBtn = document.getElementById('exportBtn');
+    if (exportBtn) {
+      exportBtn.addEventListener('click', () => {
+        const originalText = exportBtn.innerHTML;
+        exportBtn.innerHTML = `
+          <span class="material-symbols-outlined text-lg text-secondary animate-spin">progress_activity</span>
+          <span>Preparing Schedule...</span>
+        `;
+        setTimeout(() => {
+          exportBtn.innerHTML = `
+            <span class="material-symbols-outlined text-lg text-secondary">check_circle</span>
+            <span>Downloaded .iCal / CSV</span>
+          `;
+          setTimeout(() => {
+            exportBtn.innerHTML = originalText;
+          }, 3000);
+        }, 800);
+      });
+    }
+  });
+</script></main></div></body></html>
